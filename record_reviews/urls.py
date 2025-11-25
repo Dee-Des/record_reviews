@@ -20,4 +20,5 @@ from record.views import my_record
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('record/', my_record, name='record'),
 ]
