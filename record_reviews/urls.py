@@ -16,9 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from record.views import my_record
+from record import views as record_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('record/', my_record, name='record'),
+    path('record/', record_views.my_record, name="records"), # the app urls are loaded as the main urls,
 ]
