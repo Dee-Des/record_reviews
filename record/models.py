@@ -12,6 +12,7 @@ class Record(models.Model):
         )
     artist = models.CharField(max_length=200)
     genre = models.CharField(max_length=200)
+    record_label = models.CharField(max_length=200)
     year = models.IntegerField()
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
