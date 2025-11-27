@@ -1,9 +1,19 @@
 from django.contrib import admin
 from .models import Record, Review
+from django_summernote.admin import SummernoteModelAdmin
+
+@admin.register(Record) # decorator - how we register a class,
+# allows us customise how models we register will appear on the admin site
+class RecordAdmin(SummernoteModelAdmin):
+
+    list_display = ('title', 'status')
+    search_fields = ['title']
+    list_filter = ('status',)
+    summernote_fields = ('content',)
+
 
 # Register your models here.
 # import and register the Record 
 # model to allow to create, update 
 # and delete records from the admin panel 
-admin.site.register(Record)
 admin.site.register(Review)
