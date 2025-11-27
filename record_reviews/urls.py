@@ -15,10 +15,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('record/', include('record.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from record import views as record_views
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('record/', record_views.my_record, name="records"), # the app urls are loaded as the main urls,
-]
+    path('', include("record.urls"), name="record-urls"),
+    ]

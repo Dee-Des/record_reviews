@@ -1,7 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render
+from django.views import generic
+from .models import Record
 
 # Create your views here.
-def my_record(request):
-    return HttpResponse("Hello, record!")
-
+class RecordList(generic.ListView):
+    queryset = Record.objects.all()
+    template_name = "record_list.html"
