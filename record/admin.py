@@ -6,7 +6,7 @@ from django_summernote.admin import SummernoteModelAdmin
 # allows us customise how models we register will appear on the admin site
 class RecordAdmin(SummernoteModelAdmin):
 
-    list_display = ('title', 'status')
+    list_display = ('title', 'status', 'created_on')
     search_fields = ['title']
     list_filter = ('status',)
     summernote_fields = ('content',)
