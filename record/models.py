@@ -46,3 +46,11 @@ class Review(models.Model):
     rating = models.PositiveIntegerField(choices=[(i, i) for i in range(1, 6)])
     approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)
+
+
+    class Meta:
+        ordering = ["created_on"]
+
+
+    def __str__(self):
+        return f"Review {self.body} by {self.author}"
