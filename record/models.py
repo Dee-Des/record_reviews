@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.core.validators import MinValueValidator, MaxValueValidator
 
 
 STATUS = ((0, "Draft"), (1, "Published"))
@@ -19,3 +20,14 @@ class Record(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     excerpt = models.TextField(blank=True)
     updated_on = models.DateTimeField(auto_now=True)
+
+
+class Review(models.Model):
+    record = models.ForeignKey(
+        Record, on_delete=models.CASCADE, related_name="reviews")
+    author = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="reviewer")
+    body = models.TextField()
+    rating = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(5)])
+    approved = models.BooleanField(default=False)
+    created_on = models.DateTimeField(auto_now_add=True)
