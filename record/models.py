@@ -21,6 +21,22 @@ class Record(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
 
 
+
+# meta option of ordering allows the developer to define
+# their preferred default order of the database table contents.
+    class Meta:
+        ordering = ["-created_on"]
+
+
+# __str__() dunder method allows developer to represent 
+# their class object as a string for the benefit of their app's user. 
+# Keeping this logic in the model prevents Developer from having to
+# implement it in the view or the template code.
+    def __str__(self):
+        return f"{self.title} | written by {self.author}"
+
+
+
 class Review(models.Model):
     record = models.ForeignKey(
         Record, on_delete=models.CASCADE, related_name="reviews")
