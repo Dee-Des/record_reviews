@@ -32,7 +32,7 @@ class RecordList(generic.ListView):
     #)
 
 
-def record_detail(request, created_on):
+def record_detail(request, id_record):
     """
     Display an individual :model:`record.Record`.
 
@@ -47,8 +47,8 @@ def record_detail(request, created_on):
     """
     
     queryset = Record.objects.filter(status=1)
-    record = get_object_or_404(queryset, created_on=created_on)
-
+   # record = get_object_or_404(queryset, id=id_record)
+    record = get_object_or_404(queryset, id_record=id_record)
     return render(
         request,
         "record/record_detail.html",

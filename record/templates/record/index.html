@@ -18,8 +18,7 @@
                                     <p class="author">Author: {{ record.author }}</p>
                                 </div>
                             </div>
-                            <!--<a href="{% url 'record_detail' record.slug %}" class="record-link">-->
-                                <a href="{% url 'record_detail' record %}" class="record-link"></a>
+                                <a href="{% url 'record_detail' record.id %}" class="record-link"></a>
                                 <h2 class="card-title">{{ record.title }}</h2>
                                 <p class="card-text">{{ record.excerpt }}</p>
                             </a>
