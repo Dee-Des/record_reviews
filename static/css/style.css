@@ -6,7 +6,11 @@ body {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #05050f;
+    color: #4A4A4F;
+}
+
+.red-o {
+    color: #E84610;
 }
 
 .thin {
@@ -87,22 +91,22 @@ body {
     z-index: 100;
 }
 
-.record-link {
+.post-link {
     text-decoration: none;
     color: #445261;
 }
 
-.record-link:hover,
-.record-link {
+.post-link:hover,
+.page-link {
     color: #E84610;
 }
 
-.record-title {
+.post-title {
     margin-top: 10%;
     margin-left: 5%;
 }
 
-.record-subtitle {
+.post-subtitle {
     margin-left: 5%;
     color: lightgray;
 }
