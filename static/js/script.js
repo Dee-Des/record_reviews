@@ -1,0 +1,1 @@
+console.log("Vinyl is an adventure!");
