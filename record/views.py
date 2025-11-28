@@ -45,12 +45,20 @@ def record_detail(request, id_record):
 
     :template:`record/record_detail.html`
     """
-    
+    for record in record_detail:
+        print(record.id_record)
+
     queryset = Record.objects.filter(status=1)
-   # record = get_object_or_404(queryset, id=id_record)
-    record = get_object_or_404(queryset, id=id_record)
+  #  record = get_object_or_404(queryset, id=id_record)
+
+
+    record = get_object_or_404(queryset, record.id_record)
+
     return render(
         request,
         "record/record_detail.html",
-        {"record": record},
+       # {"record": record},
+        {"record": record.id_record},
+
     )
+
