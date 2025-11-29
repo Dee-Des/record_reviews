@@ -18,11 +18,16 @@
                                     <p class="author">Author: {{ record.author }}</p>
                                 </div>
                             </div>
-                                <a href="{% url 'record_detail' record.id %}" class="record-link"></a>
-                                <h2 class="card-title">{{ record.title }}</h2>
-                                <p class="card-text">{{ record.excerpt }}</p>
+                            <!--<a href="{% url 'record_detail' record.id %}" class="record-link"></a>-->
+                            
+                            <!--<a href="{% url 'record_detail' record.id %}"></a>
+                              #  <h2>{{ record.record_name }}</h2>-->
+                            <a href="{% url 'record_detail' record.id %}">
+                               <h2>{{ record.title }}</h2>
                             </a>
-
+                            <!--<h2 class="card-title">{{ record.title }}</h2>-->
+                            <p class="card-text">{{ record.excerpt }}</p>
+                            </a>
                             <hr />
                             <p class="card-text text-muted h6">{{ record.created_on}}
                             </p>
