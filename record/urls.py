@@ -6,4 +6,5 @@ urlpatterns = [
     # path('<slug:slug>/', views.record_detail, name='record_detail'),
    # path('<int:record_id>/', views.record_detail, name='record_detail'),
     path("<int:id>/", views.record_detail, name="record_detail") 
+    
     ]
