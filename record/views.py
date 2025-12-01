@@ -103,4 +103,18 @@ def review_edit(request, id, review_id):
     return HttpResponseRedirect(reverse('record_detail', args=[id]))
 
 
+def review_delete(request, id, review_id):
+    """
+    view to delete review
+    """
+    queryset = Record.objects.filter(status=1)
+    record = get_object_or_404(queryset, id=id)
+    review = get_object_or_404(Review, pk=review_id)
 
+    if review.author == request.user:
+        review.delete()
+        messages.add_message(request, messages.SUCCESS, 'Review deleted!')
+    else:
+        messages.add_message(request, messages.ERROR, 'You can only delete your own reviews!')
+
+    return HttpResponseRedirect(reverse('record_detail', args=[id]))
