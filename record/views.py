@@ -52,6 +52,23 @@ def record_detail(request, id):
     record = get_object_or_404(queryset, id=id)
     reviews = record.reviews.all().order_by("created_on")
     review_count = record.reviews.filter(approved=True).count()
+
+    if request.method == "POST":
+        review_form = ReviewForm(data=request.POST)
+        if review_form.is_valid():
+            review = review_form.save(commit=False)
+            review.author = request.user
+            review.post = post
+            review.save()
+
+
+
+
+
+
+
+
+
     review_form = ReviewForm() 
     
     return render(
