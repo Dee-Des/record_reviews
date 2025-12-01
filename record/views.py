@@ -47,14 +47,15 @@ def record_detail(request, id):
     """
     
     queryset = Record.objects.filter(status=1)
-   # record = get_object_or_404(queryset, id=id_record)
-   # record = get_object_or_404(queryset, record_id=id_record)
-    #record = get_object_or_404(queryset, id=id_record)
+   
     record = get_object_or_404(queryset, id=id)
-    
+    reviews = record.reviews.all().order_by("created_on")
+    review_count = record.reviews.filter(approved=True).count() 
     return render(
         request,
         "record/record_detail.html",
-        #{"record": record},
-        {"record": record},
+        {"record": record,
+         "reviews": reviews,
+         "review_count": review_count,
+         },
     )
