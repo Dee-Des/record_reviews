@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
+from django.contrib import messages
 from .models import Record
 from .forms import ReviewForm
 
@@ -58,16 +59,12 @@ def record_detail(request, id):
         if review_form.is_valid():
             review = review_form.save(commit=False)
             review.author = request.user
-            review.post = post
+            review.record = record
             review.save()
-
-
-
-
-
-
-
-
+            messages.add_message(
+                request, messages.SUCCESS,
+                'Review submitted and awaiting approval'
+    )
 
     review_form = ReviewForm() 
     

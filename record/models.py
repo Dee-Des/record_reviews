@@ -36,14 +36,13 @@ class Record(models.Model):
         return f"{self.title} | written by {self.author}"
 
 
-
 class Review(models.Model):
     record = models.ForeignKey(
         Record, on_delete=models.CASCADE, related_name="reviews")
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="reviewer")
     body = models.TextField()
-    rating = models.PositiveIntegerField(choices=[(i, i) for i in range(1, 6)])
+    rating = models.PositiveIntegerField(choices=[(i, i) for i in range(1, 6)], default = 0)
     approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)
 
