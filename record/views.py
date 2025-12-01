@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
 from .models import Record
+from .forms import ReviewForm
 
 # Create your views here.
 class RecordList(generic.ListView):
@@ -50,12 +51,15 @@ def record_detail(request, id):
    
     record = get_object_or_404(queryset, id=id)
     reviews = record.reviews.all().order_by("created_on")
-    review_count = record.reviews.filter(approved=True).count() 
+    review_count = record.reviews.filter(approved=True).count()
+    review_form = ReviewForm() 
+    
     return render(
         request,
         "record/record_detail.html",
         {"record": record,
          "reviews": reviews,
          "review_count": review_count,
+         "review_form": review_form,
          },
     )
