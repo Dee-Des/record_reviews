@@ -3,35 +3,34 @@
 {% load crispy_forms_tags %}
 
 <div class="masthead">
-    <div class="container">
-        <div class="row g-0">
-            <div class="col-md-6 masthead-text">
-                <!-- Record title goes in these h1 tags -->
-                <h1 class="record-title">{{ record.title }}</h1>
-                <!-- Record author goes before the | the record's created date goes after -->
-                <p class="record-subtitle">{{ record.author }} | {{ record.created_on }}</p>
-            </div>
-            <div class="d-none d-md-block col-md-6 masthead-image">
-                <img src="{% static 'images/closeup-record-on-turntable.jpg' %}" class="scale"
-                    alt="closeup-record-on-turnable">
-            </div>
-        </div>
+  <div class="container">
+    <div class="row g-0">
+      <div class="col-md-6 masthead-text">
+        <!-- Record title goes in these h1 tags -->
+        <h1 class="record-title">{{ record.title }}</h1>
+        <!-- Record author goes before the | the record's created date goes after -->
+        <p class="record-subtitle">{{ record.author }} | {{ record.created_on }}</p>
+      </div>
+      <div class="d-none d-md-block col-md-6 masthead-image">
+        <img src="{% static 'images/closeup-record-on-turntable.jpg' %}" class="scale" alt="closeup-record-on-turnable">
+      </div>
     </div>
+  </div>
 </div>
 
 <div class="container">
-    <div class="row">
-        <div class="col card mb-4  mt-3 left  top">
-            <div class="card-body">
-                <!-- The record content goes inside the card-text. -->
-                <!-- Use the | safe filter inside the template tags -->
-                <p class="card-text">
-                    {{ record.content | safe }}
-                </p>
-            </div>
-        </div>
+  <div class="row">
+    <div class="col card mb-4  mt-3 left  top">
+      <div class="card-body">
+        <!-- The record content goes inside the card-text. -->
+        <!-- Use the | safe filter inside the template tags -->
+        <p class="card-text">
+          {{ record.content | safe }}
+        </p>
+      </div>
     </div>
-      <!-- Displaying count of reviews -->
+  </div>
+  <!-- Displaying count of reviews -->
   <div class="row">
     <div class="col-12">
       <strong class="text-secondary">
@@ -67,6 +66,9 @@
             This review is awaiting approval
           </p>
           {% endif %}
+          {% if user.is_authenticated and review.author == user %}
+          <button class="btn btn-edit" review_id="{{ review.id }}">Edit</button>
+          {% endif %}
         </div>
         <!-- For loop ends here -->
         {% endfor %}
@@ -78,12 +80,10 @@
         {% if user.is_authenticated %}
         <h3>Leave a review:</h3>
         <p>Posting as: {{ user.username }}</p>
-        <form id="reviewForm" method="post"
-          style="margin-top: 1.3em;">
+        <form id="reviewForm" method="post" style="margin-top: 1.3em;">
           {{ review_form | crispy }}
           {% csrf_token %}
-          <button id="submitButton" type="submit"
-            class="btn btn-signup btn-lg">Submit</button>
+          <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
         </form>
         {% else %}
         <p>Log in to leave a review</p>
@@ -92,4 +92,8 @@
     </div>
   </div>
 
-{% endblock content %}
+  {% endblock content %}
+
+  {% block extras %}
+  <script src="{% static 'js/reviews.js' %}"></script>
+  {% endblock %}
