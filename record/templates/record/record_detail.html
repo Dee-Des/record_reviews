@@ -60,6 +60,7 @@
           </p>
           <div id="review{{ review.id }}">
             {{ review.body | linebreaks }}
+            {{review.rating | linebreaks }}
           </div>
           {% if not review.approved and review.author == user %}
           <p class="approval">
