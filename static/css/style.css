@@ -2,6 +2,10 @@ body {
     background-color: #F9FAFC;
 }
 
+h2 {
+    color: #6FD11F
+}
+
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
@@ -39,7 +43,7 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #0000FF;
+    background-color: #000000;
 }
 
 .scale {
@@ -51,6 +55,7 @@ body {
     color: white;
     margin: 4px;
     text-transform: uppercase;
+    background-color: #E84610;
 }
 
 .masthead {
@@ -100,6 +105,7 @@ body {
 .record-title {
     margin-top: 10%;
     margin-left: 5%;
+    color: #6FD11F;
 }
 
 .record-subtitle {
