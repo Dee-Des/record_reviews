@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
 
@@ -14,16 +15,23 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
+                                {% if "placeholder" in record.featured_image.url %}
+                                <img class="card-img-top" src="{% static 'images/person-looking-at-record-in-record-collection.jpg' %}"
+                                    alt="placeholder image">
+                                {% else %}
+                                <img class="card-img-top" src=" {{ record.featured_image.url }}"
+                                    alt="{{ record.title }}">
+                                {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ record.author }}</p>
                                 </div>
                             </div>
                             <!--<a href="{% url 'record_detail' record.id %}" class="record-link"></a>-->
-                            
+
                             <!--<a href="{% url 'record_detail' record.id %}"></a>
                               #  <h2>{{ record.record_name }}</h2>-->
                             <a href="{% url 'record_detail' record.id %}">
-                               <h2>{{ record.title }}</h2>
+                                <h2>{{ record.title }}</h2>
                             </a>
                             <!--<h2 class="card-title">{{ record.title }}</h2>-->
                             <p class="card-text">{{ record.excerpt }}</p>
