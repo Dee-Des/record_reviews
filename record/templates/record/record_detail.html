@@ -59,8 +59,8 @@
             </span> wrote:
           </p>
           <div id="review{{ review.id }}">
-            {{ review.body | linebreaks }}
-            {{review.rating}} <i class="fas fa-star"></i>
+            <div class="review-body">{{ review.body | linebreaks }}</div>
+            <div class="review-rating">{{review.rating}} <i class="fas fa-star"></i></div>
           </div>
           {% if not review.approved and review.author == user %}
           <p class="approval">
@@ -69,7 +69,7 @@
           {% endif %}
           {% if user.is_authenticated and review.author == user %}
           <button class="btn btn-delete" review_id="{{ review.id }}">Delete</button>
-          <button class="btn btn-edit" review_id="{{ review.id }}">Edit</button>
+          <button class="btn btn-edit" review_id="{{ review.id }}" review_rating="{{ review.rating }}">Edit</button>
           {% endif %}
         </div>
         <!-- For loop ends here -->
