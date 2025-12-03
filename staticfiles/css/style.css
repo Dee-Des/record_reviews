@@ -35,6 +35,13 @@ h2 {
     background-color: transparent;
 }
 
+.card-img-top {
+    width: 270px;
+    height: 180px;
+    object-fit: cover; /* ensure the image scales/crops nicely*/
+    display: block; /* keep layout consistent */
+}
+
 .image-container {
     position: relative;
 }
