@@ -161,3 +161,7 @@ h2 {
 .approval {
     color: rgb(222, 146, 168);
 }
+
+.fas fa-star {
+    color: gold;
+}
