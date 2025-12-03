@@ -4,7 +4,7 @@ from .models import Record, Review
 class RecordForm(forms.ModelForm):
     class Meta:
         model = Record
-        fields = ('title', 'content', 'status', 'featured_image')  # include image
+        fields = ('title', 'author', 'featured_image', 'artist', 'genre', 'year', 'recordLabel', 'content', 'status', 'excerpt')  # include image
 
     
 class ReviewForm(forms.ModelForm):
