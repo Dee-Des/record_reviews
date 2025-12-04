@@ -35,9 +35,9 @@ project board - https://
 ### User stories
 
 <details>
-1. As a: SITE USER I can: view a paginated list of records So that: I can select which record I want to view.
-2. As a: SITE USER I can: click on a record So that: I can read the full text
-3. As a: SITE USER/ADMIN I can: view reviews on an individual record So that: I can read the conversation
+- As a Site User I can view a paginated list of records so that I can select which record I want to view
+- As a Site User I can click on a record so that I can read the full text
+- As a Site User/Admin I can view reviews on an individual record So that I can read the conversation
 4.
 5.
 6.
