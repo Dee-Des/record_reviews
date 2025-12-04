@@ -1,5 +1,5 @@
 .venv/
 env.py/
-record/fixtures
+record/fixtures/
 staticfiles/
-db.sqlite3
+db.sqlite3/

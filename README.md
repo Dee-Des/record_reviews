@@ -38,6 +38,7 @@ project board - https://github.com/users/Dee-Des/projects/11/views/1?pane=issue&
 - As a Site User I can view a paginated list of records so that I can select which record I want to view
 - As a Site User I can click on a record so that I can read the full text
 - As a Site User/Admin I can view reviews on an individual record So that I can read the conversation
+- As a Site User I can register an account so that I can review a record
 4.
 5.
 6.
