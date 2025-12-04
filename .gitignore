@@ -3,3 +3,4 @@ env.py/
 record/fixtures/
 staticfiles/
 db.sqlite3/
+data.json/
