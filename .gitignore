@@ -1,5 +1,5 @@
 .venv/
-env.py
+env.py/
 record/fixtures
-staticfiles
+staticfiles/
 db.sqlite3
