@@ -39,7 +39,8 @@ project board - https://github.com/users/Dee-Des/projects/11/views/1?pane=issue&
 - As a Site User I can click on a record so that I can read the full text
 - As a Site User/Admin I can view reviews on an individual record So that I can read the conversation
 - As a Site User I can register an account so that I can review a record
-4.
+- As a Site User I can leave reviews on a record 
+So that: I can be involved in the conversation
 5.
 6.
 7.
