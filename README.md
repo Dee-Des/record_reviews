@@ -1,9 +1,9 @@
 # RecordReviews
 ### By Denise Desmond
 
-live site - 
+live site - https://dashboard.heroku.com/apps/capstone-project-recordreviews/
 
-project board - 
+project board - https://github.com/users/Dee-Des/projects/11
 
 ![Website landing page](/       )
 
@@ -68,5 +68,7 @@ Login Page
 
 Logout Page
 ![logout page wireframes](/documentation/Wireframes/Logout%20page/Mobile%20Tablet%20and%20Desktop.png)
+
+These were the orginal wireframes I designed for the project
 
 </details>
