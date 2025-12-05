@@ -77,6 +77,6 @@ These were the orginal wireframes I designed for the project
 
 ### ERD
 
-![ERD](/documentation/capstone-erd/record-review-erd)
+![ERD](/documentation/capstone_erd/record-review-ERD.png)
 
 This is the original ERD I designed for the project with Diagram GPT and Eraser
