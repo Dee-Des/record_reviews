@@ -60,16 +60,16 @@ project board - https://github.com/users/Dee-Des/projects/11/views/1?pane=issue&
 
 Home Page
 
-![home page wireframes](/documentation/Wireframes/Home%20page/Mobile%20Tablet%20and%20Desktop.png)
+![home page wireframes](/documentation/wireframes/home_page/mobile-tablet-and-desktop.png)
 
 Join Page
-![join page wireframes](/documentation/Wireframes/Join%20page/Mobile%20Tablet%20and%20Desktop%20.png)
+![join page wireframes](/documentation/wireframes/join_page/mobile-tablet-and-desktop.png)
 
 Login Page
-![login page wireframes](/documentation/Wireframes/Login%20page/Mobile%20Tablet%20and%20Desktop.png)
+![login page wireframes](/documentation/wireframes/login_page/mobile-tablet-and-desktop.png)
 
 Logout Page
-![logout page wireframes](/documentation/Wireframes/Logout%20page/Mobile%20Tablet%20and%20Desktop.png)
+![logout page wireframes](/documentation/wireframes/logout_page/mobile-tablet-and-desktop.png)
 
 These were the orginal wireframes I designed for the project
 
@@ -77,6 +77,6 @@ These were the orginal wireframes I designed for the project
 
 ### ERD
 
-![ERD](/documentation/Capstone%20ERD/)
+![ERD](/documentation/capstone-erd/record-review-erd)
 
 This is the original ERD I designed for the project with Diagram GPT and Eraser
