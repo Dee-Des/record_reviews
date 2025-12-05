@@ -56,5 +56,17 @@ project board - https://github.com/users/Dee-Des/projects/11/views/1?pane=issue&
 
 <details>
 
+Home Page
+
+![home page wireframes](/documentation/Wireframes/Home%20page/Mobile%20Tablet%20and%20Desktop.png)
+
+Join Page
+![join page wireframes](/documentation/Wireframes/Join%20page/Mobile%20Tablet%20and%20Desktop%20.png)
+
+Login Page
+![login page wireframes](/documentation/Wireframes/Login%20page/Mobile%20Tablet%20and%20Desktop.png)
+
+Logout Page
+![logout page wireframes](/documentation/Wireframes/Logout%20page/Mobile%20Tablet%20and%20Desktop.png)
 
 </details>
