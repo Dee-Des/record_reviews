@@ -35,22 +35,20 @@ project board - https://github.com/users/Dee-Des/projects/11/views/1?pane=issue&
 ### User stories
 
 <details>
-- As a Site User I can view a paginated list of records so that I can select which record I want to view
-- As a Site User I can click on a record so that I can read the full text
-- As a Site User/Admin I can view reviews on an individual record So that I can read the conversation
-- As a Site User I can register an account so that I can review a record
-- As a Site User I can leave reviews on a record 
-So that: I can be involved in the conversation
-5.
-6.
-7.
-8.
-9.
-10.
-11.
-12.
-13.
-14.
+- As a Site User I can view a paginated list of records so that I can select which record I want to view (Must Have)
+- As a Site User I can click on a record so that I can read the full text (Must Have)
+- As a Site User/Admin I can view reviews on an individual record So that I can read the conversation (Must Have)
+- As a Site User I can register an account so that I can review a record (Must Have)
+- As a Site User I can leave reviews on a record so that I can be involved in the conversation (Must Have)
+- As a Site User I can modify or delete my review on a record so that I can be involved in the conversation (Must Have)
+- As a Site Admin I can create, read, update and delete records so that I can manage my record content (Must Have)
+- As a Site Admin I can create draft records so that I can finish writing the content later (Must Have)
+- As a Site Admin I can approve or disapprove reviews so that I can filter out objectionable reviews (Must Have)
+- As a Site User I can click on the About link so that I can read about the site (Should Have)
+- As a Site Admin I can create or update the about page content so that it is available on the site (Should Have)
+- As a Site User I can fill in a contact request form so that I can submit a request for contact (Could Have)
+- As a Site Admin I can store contact requests in the database so that I can review them (Could Have)
+- As a Site Admin I can mark contact requests as "read" so that I can see how many I still need to process (Could Have)
 
 </details>
 
