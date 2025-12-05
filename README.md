@@ -26,6 +26,8 @@ project board - https://github.com/users/Dee-Des/projects/11
 
 ## Overview
 
+Record Reviews is a site where ..........
+
 ## UX Design Process
 
 <details>
@@ -72,3 +74,9 @@ Logout Page
 These were the orginal wireframes I designed for the project
 
 </details>
+
+### ERD
+
+![ERD](/documentation/Capstone%20ERD/)
+
+This is the original ERD I designed for the project with Diagram GPT and Eraser
