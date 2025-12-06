@@ -5,7 +5,7 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
-# Create your models here.
+# Create model
 class Record(models.Model):
     title = models.CharField(max_length=200, unique=True)
     author = models.ForeignKey(
@@ -24,8 +24,8 @@ class Record(models.Model):
 
 
 
-# meta option of ordering allows the developer to define
-# their preferred default order of the database table contents.
+# meta option of ordering allows developer define their preferred default order of the
+# database table contents
     class Meta:
         ordering = ["-created_on"]
 
@@ -33,7 +33,7 @@ class Record(models.Model):
 # __str__() dunder method allows developer to represent 
 # their class object as a string for the benefit of their app's user. 
 # Keeping this logic in the model prevents Developer from having to
-# implement it in the view or the template code.
+# implement it in the view or the template code
     def __str__(self):
         return f"{self.title} | written by {self.author}"
 
