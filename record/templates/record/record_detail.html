@@ -30,7 +30,7 @@
   <div class="row">
     <div class="col-12">
       <strong class="text-secondary">
-        <i class="far fa-reviews"></i> {{ review_count }} Review(s) Approved
+        <i class="far fa-comments"></i> {{ review_count }} Review(s) Approved
       </strong>
     </div>
     <div class="col-12">
@@ -63,8 +63,8 @@
           </p>
           {% endif %}
           {% if user.is_authenticated and review.author == user %}
-          <button class="btn btn-delete" review_id="{{ review.id }}">Delete</button>
-          <button class="btn btn-edit" review_id="{{ review.id }}" review_rating="{{ review.rating }}">Edit</button>
+          <button class="btn btn-delete" data-review_id="{{ review.id }}">Delete</button>
+          <button class="btn btn-edit" data-review_id="{{ review.id }}" review_rating="{{ review.rating }}">Edit</button>
           {% endif %}
         </div>
         <!-- For loop ends here -->
@@ -91,7 +91,7 @@
 </div>
 
 <!-- Delete confirmation modal -->
-<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
