@@ -1,5 +1,4 @@
 const editButtons = document.getElementsByClassName("btn-edit");
-const reviewText = document.getElementById("id_body", 'id_rating');
 const reviewForm = document.getElementById("reviewForm");
 const submitButton = document.getElementById("submitButton");
 const deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
@@ -26,7 +25,7 @@ for (let button of editButtons) {
       .getElementById(`review${reviewId}`)
       .querySelector(".review-body").innerText;
     // Get the correct form inputs
-    let reviewRatingInput = document.getElementById('id_rating') // select
+    let reviewRatingInput = document.getElementById('id_rating'); // select
     let reviewTextInput = document.getElementById('id_body'); //textarea
     // Prepopulate fields
     reviewRatingInput.value = ratingValue;   // selects the matching option
