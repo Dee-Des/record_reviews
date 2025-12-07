@@ -20,9 +20,9 @@
   <div class="row">
     <div class="col card mb-4  mt-3 left  top">
       <div class="card-body">
-        <p class="card-text">
+        <div class="card-text">
           {{ record.content | safe }}
-        </p>
+        </div>
       </div>
     </div>
   </div>
@@ -64,7 +64,7 @@
           {% endif %}
           {% if user.is_authenticated and review.author == user %}
           <button class="btn btn-delete" data-review_id="{{ review.id }}">Delete</button>
-          <button class="btn btn-edit" data-review_id="{{ review.id }}" review_rating="{{ review.rating }}">Edit</button>
+          <button class="btn btn-edit" data-review_id="{{ review.id }}" data-review_rating="{{ review.rating }}">Edit</button>
           {% endif %}
         </div>
         <!-- For loop ends here -->
