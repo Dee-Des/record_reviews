@@ -18,9 +18,9 @@ const deleteConfirm = document.getElementById("deleteConfirm");
 */
 for (let button of editButtons) {
   button.addEventListener("click", (e) => {
-    let reviewId = e.target.getAttribute("review_id");
+    let reviewId = e.target.getAttribute("data-review_id");
     // Get value from the button attribute
-    let ratingValue = e.target.getAttribute("review_rating");  
+    let ratingValue = e.target.getAttribute("data-review_rating");  
     // Get body text only (not rating)
     let reviewContent = document
       .getElementById(`review${reviewId}`)
@@ -49,7 +49,7 @@ for (let button of editButtons) {
 */
 for (let button of deleteButtons) {
   button.addEventListener("click", (e) => {
-    let reviewId = e.target.getAttribute("review_id");
+    let reviewId = e.target.getAttribute("data-review_id");
     deleteConfirm.href = `delete_review/${reviewId}`;
     deleteModal.show();
   });
