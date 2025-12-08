@@ -12,7 +12,7 @@ project board - https://github.com/users/Dee-Des/projects/11
 2. [UX Design Process](#ux-design-process)
     - [User Stories](#user-stories)
     - [Wireframes](#wireframes)
-    - [Color Scheme](#color-schemes)
+    - [Color Schemes](#color-schemes)
     - [Fonts](#fonts)
 3. [Features](#features)
 4. [Improvements](#improvments-and-future-development)
@@ -20,6 +20,7 @@ project board - https://github.com/users/Dee-Des/projects/11
 6. [Testing and Validation](#testing-and-validation)
 7. [AI implementation](#ai-implementation)
 8. [Database](#database)
+    - [ERD](#erd)
 9. [References](#references)
 10. [Tech used](#tech-used)
 11. [Learning points](#learning-points)
@@ -77,16 +78,10 @@ Logout Page
 ![logout page wireframes](/documentation/wireframes/logout_page/mobile-tablet-and-desktop.png)
 </details>
 
-### ERD
-
+### Color Schemes
 <details>
-![ERD](/documentation/capstone_erd/record-review-ERD.png)
+
 </details>
-This is the ERD for the full scope of my Capstone project. In my future enhancements I would add in full scope.
-
-### Color schemes
-<details>
-![color scheme](/documentation/color-scheme.png)
 
 ### Fonts
 
