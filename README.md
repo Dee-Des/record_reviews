@@ -141,7 +141,7 @@ Home page - page
 
 Record details page with reviews
 
-![record details and reviews page](/documentation/validation/html/record_details_and_reviews_page/)
+![record details and reviews page](/documentation/validation/html/record_details_and_reviews_page/record-details-and-reviews-page.png)
 
 ### CSS Validation
 
@@ -184,7 +184,7 @@ views.py - Alot of lines of code so I took three screenshots to try capture it a
 
 No errors were displayed in JSHint - only warnings which could be ignored.
 
-![js validation](/documentation/validation/js/js-validation.png.png)
+![js validation](/documentation/validation/js/js-validation.png)
 
 
 ### Lighthouse
