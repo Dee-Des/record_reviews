@@ -149,6 +149,17 @@ Record details page with reviews
 
 ### Python Validation
 
+![admin.py]
+
+
+
+
+
+
+
+
+
+
 ### JS Validation
 
 No errors were displayed in JSHint - only warnings which could be ignored.
@@ -170,13 +181,11 @@ Record Details page with Reviews
 
 ![lighthouse validation record details page with reviews](/documentation/validation/lighthouse/record-details-page-with-reviews.png)
 
-### Wave
-
-
 ### Testing
 
-
 </details>
+
+
 </details>
 
 ## AI Implementation
