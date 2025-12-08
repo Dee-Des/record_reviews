@@ -78,9 +78,11 @@ Logout Page
 ![logout page wireframes](/documentation/wireframes/logout_page/mobile-tablet-and-desktop.png)
 </details>
 
-### Color Schemes
+### Color schemes
+
 <details>
 
+![color schemes](/documentation/color_schemes/color-schemes.png)
 </details>
 
 ### Fonts
