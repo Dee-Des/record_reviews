@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import Record, Review
 from django_summernote.admin import SummernoteModelAdmin
+from .models import Record, Review
 from .forms import RecordForm
 
 
