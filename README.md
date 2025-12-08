@@ -12,6 +12,7 @@ project board - https://github.com/users/Dee-Des/projects/11
 2. [UX Design Process](#ux-design-process)
     - [User Stories](#user-stories)
     - [Wireframes](#wireframes)
+    - [ERD](#erd)
     - [Color Schemes](#color-schemes)
     - [Fonts](#fonts)
 3. [Features](#features)
@@ -20,7 +21,6 @@ project board - https://github.com/users/Dee-Des/projects/11
 6. [Testing and Validation](#testing-and-validation)
 7. [AI implementation](#ai-implementation)
 8. [Database](#database)
-    - [ERD](#erd)
 9. [References](#references)
 10. [Tech used](#tech-used)
 11. [Learning points](#learning-points)
@@ -121,7 +121,7 @@ Site Admins can save unfinished records as drafts to publish later.
 ## Improvements and Future Developement
 
 <details>
-
+In my future enhancements I would add in the full scope as mentioned in the UX Design Process section of this README document. This would include the Should Have and Could Have User Stories mentioned in this README document.
 
 
 </details>
@@ -129,12 +129,6 @@ Site Admins can save unfinished records as drafts to publish later.
 ## Testing and Validation
 
 <details>
-
-
-Manual Testing was being carried out regularly throughout the project on 
-
-
-
 
 ### HTML Validation
 
@@ -217,7 +211,8 @@ Record Details page with Reviews
 ## AI Implementation
 
 <details>
-###Code Creation
+
+### Code Creation
 
 
 ### Debugging
@@ -232,9 +227,8 @@ Record Details page with Reviews
 
 ## Database
 <details>
-The database is a Postgres database hosted by Code Insitute
+The database is a Postgres database hosted by Code Insitute.
 
-![ERD](/documentation/capstone_erd/record-review-ERD.png)
 
 ###      table
 
