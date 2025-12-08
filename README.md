@@ -135,7 +135,7 @@ Site Admins can save unfinished records as drafts to publish later.
 Home page
 ![home page](/documentation/validation/html/home_page/home-page.png)
 
-Home page - page 
+Home page - page 2
 
 ![home page page 2](/documentation/validation/html/home_page/home-page-page-2.png) 
 
