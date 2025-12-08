@@ -79,8 +79,9 @@ Logout Page
 
 ### ERD
 
+<details>
 ![ERD](/documentation/capstone_erd/record-review-ERD.png)
-
+</details>
 This is the ERD for the full scope of my Capstone project. In my future enhancements I would add in full scope.
 
 ### Color schemes
