@@ -149,15 +149,35 @@ Record details page with reviews
 
 ### Python Validation
 
-![admin.py]
+admin.py
 
+![admin.py](/documentation/validation/python/admin.py.png)
 
+apps.py
+![apps.py](/documentation/validation/python/apps.py.png)
 
+forms.py
+![forms.py](/documentation/validation/python/forms.py.png)
 
+models.py - Alot of lines of code so I took two screenshots to try capture it all in the Linter
 
+![models.py - 1st screenshot](/documentation/validation/python/models.py%20-%201st%20screenshot.png)
 
+![models.py - 2nd screenshot](/documentation/validation/python/models.py%20-%202nd%20screenshot.png)
 
+urls.py - one file in record and one in record_reviews
 
+![urls.py - record](/documentation/validation/python/record%20urls.py.png)
+
+![urls.py - record_reviews](/documentation/validation/python/record_reviews%20urls.py.png)
+
+views.py - Alot of lines of code so I took three screenshots to try capture it all in the Linter
+
+![views.py - 1st screenshot](/documentation/validation/python/views.py%20-%201st%20screenshot.png)
+
+![views.py - 2nd screenshot](/documentation/validation/python/view.py%20-%202nd%20screenshot.png)
+
+![views.py - 3rd screenshot](/documentation/validation/python/views.py%20-%203rd%20screenshot.png)
 
 
 ### JS Validation
