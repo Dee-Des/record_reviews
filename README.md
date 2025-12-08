@@ -130,6 +130,12 @@ Site Admins can save unfinished records as drafts to publish later.
 
 <details>
 
+
+Manual Testing was being carried out regularly throughout the project on 
+
+
+
+
 ### HTML Validation
 
 Home page
@@ -195,7 +201,7 @@ Home Page
 
 Home Page - page 2
 
-![lighthouse validation home page - page 2](/documentation/validation/lighthouse/home-page-pg-2.png)
+![lighthouse validation home page - page 2](/documentation/validation/lighthouse/home-page-page-2.png)
 
 Record Details page with Reviews
 
