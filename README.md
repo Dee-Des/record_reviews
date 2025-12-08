@@ -90,6 +90,146 @@ Logout Page
 <details>
 For the fonts I used sans‑serif fonts
 </details>
+</details>
+
 
 ## Features
+
 <details>
+Key features of the website include:
+
+- User Registration and Authentication 
+Visitors can sign up, log in, and manage their accounts to participate in reviews.
+
+- Records Listings (Paginated)
+Users see a paginated list of vinyl records, which makes browsing manageable and organised.
+
+- Record Detail pages
+Clicking on a record shows full content and associated reviews
+
+- Review System
+Users can add, edit and delete their own reviews.
+Site admins can approve/disapprove reviews.
+
+- Admin Dashboard
+Site Admins can create, update, and delete records, manage drafts, and moderate reviews.
+
+- Draft Records
+Site Admins can save unfinished records as drafts to publish later.
+</details>
+
+## Improvements and Future Developement
+
+<details>
+
+
+
+</details>
+
+## Testing and Validation
+
+<details>
+
+### HTML Validation
+
+Home page
+![home page](/documentation/validation/html/home_page/home-page.png)
+
+Home page - page 
+
+![home page page 2](/documentation/validation/html/home_page/home-page-page-2.png) 
+
+Record details page with reviews
+
+![record details and reviews page](/documentation/validation/html/record_details_and_reviews_page/)
+
+### CSS Validation
+
+![css validation](/documentation/validation/css/css-validation.png)
+
+### Python Validation
+
+### JS Validation
+
+No errors were displayed in JSHint - only warnings which could be ignored.
+
+![js validation](/documentation/validation/js/js-validation.png.png)
+
+
+### Lighthouse
+
+Home Page
+
+![lighthouse validation home page](/documentation/validation/lighthouse/home-page.png)
+
+Home Page - page 2
+
+![lighthouse validation home page - page 2](/documentation/validation/lighthouse/home-page-pg-2.png)
+
+Record Details page with Reviews
+
+![lighthouse validation record details page with reviews](/documentation/validation/lighthouse/record-details-page-with-reviews.png)
+
+### Wave
+
+
+### Testing
+
+
+</details>
+</details>
+
+## AI Implementation
+
+<details>
+###Code Creation
+
+
+### Debugging
+
+
+### Performance and Experience
+
+
+### Development Process
+
+</details>
+
+## Database
+<details>
+The database is a Postgres database hosted by Code Insitute
+
+![ERD](/documentation/capstone_erd/record-review-ERD.png)
+
+###      table
+
+
+###     table
+</details>
+
+## References
+<details>
+
+</details>
+
+## Tech
+<details>
+- CSS
+- HTML
+- Django
+- Bootstrap
+- Copilot
+- Postgres
+</details>
+
+## Learning Points
+
+<details>
+</details>
+
+
+
+
+
+
+
