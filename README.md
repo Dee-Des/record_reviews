@@ -146,11 +146,28 @@ Key features of the website include:
 - Each record card links to its detail page
 - Footer with social media links (Facebook, Twitter, Instagram, YouTube)
 
+Home Page - User logged in
+
+![home page when logged in](/static/images/features/home-page-when-logged-in.png)
+
+Home Page - User not logged in
+![home page when logged in](/static/images/features/home-page-when-not-logged-in.png)
+
+
 📑 Paginated Listings (/?page=2, /?page=3, …)	
 
 - Continuation of record listings with pagination controls
 - Same layout and features as Home Page
 - Ensures scalability for large record collections
+
+Home Page - Page 2 - User logged in
+
+![home page - page 2 - when logged in](/static/images/features/home-page-page-2-when-logged-in.png)
+
+Home Page - page 2 - User not logged in
+
+![home page - page 2 - when not logged in](/static/images/features/home-page-page-2-when-not-logged-in.png)
+
 
 🎼 Record Detail Page (//)	
 
@@ -164,12 +181,25 @@ Key features of the website include:
 - Site users can view approved reviews 
 - Review moderation: reviews require admin approval before appearing
 
+Record Details page with Review - User logged in
+
+![record details page with review when logged in](/static/images/features/record-details-page-with-review-when-logged-in.png)
+
+Record Details page with Review - User not logged in
+
+![record details page with review when notlogged in](/static/images/features/record-details-page-with-review-when-not-logged-in.png)
+
+
 🔐 Register Page (/accounts/signup/)
 
 - User registration form with Bootstrap styling
 - Validation messages for incorrect or missing input
 - Creates new user accounts stored in Postgres
 - Displays confirmation message
+
+Register page
+
+![register page](/static/images/features/register-page.png)
 
 🔑 Login Page (/accounts/login/)	
 
@@ -178,11 +208,19 @@ Key features of the website include:
 - Redirects to Home Page after successful login
 - Displays confirmation message
 
+Login page
+
+![login page](static/images/features/login-page.png)
+
 🚪 Logout Page (/accounts/logout/)	
 
 - Logs out the user
 - Displays confirmation message
 - Navbar updates to show “You are not logged in.”
+
+Logout page
+
+![logout page](/static/images/features/logout-page.png)
 
 ⚙️ Admin Dashboard (/admin/)	
 
@@ -193,6 +231,11 @@ Key features of the website include:
 - Built‑in search and filters
 - Full CRUD operations for all models
 - Displays confirmation messages
+
+Authenticated superuser logged in
+
+![admin dashboard - authenticated superuser logged in](/static/images/features/admin-page-site-admin-user-logged-in.png)
+
 
 ✨ Technical Features include:
 
@@ -300,7 +343,7 @@ Manual Testing was carried out during the Development process and again after De
 ## 📌 Cover Page
 
 **Project Title:** RecordReviews – Capstone Project  
-**Author:** [Denise Desmond]  
+**Author:** Denise Desmond 
 **Date of Testing:** December 2025  
 **Purpose of Testing:**  
 To validate that all features of the RecordReviews project function correctly across multiple devices (Desktop and Android). Testing includes navigation, CRUD operations for Records and Reviews, authentication, permissions, access control, notifications, and non‑functional requirements (validation, responsiveness, accessibility).  
