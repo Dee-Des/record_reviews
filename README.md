@@ -14,6 +14,7 @@ project board - https://github.com/users/Dee-Des/projects/11
     - [Wireframes](#wireframes)
     - [ERD](#erd)
     - [Color Schemes](#color-schemes)
+    - [Imagery](#imagery)
     - [Fonts](#fonts)
 3. [Features](#features)
 4. [Improvements](#improvments-and-future-development)
@@ -85,6 +86,22 @@ Logout Page
 ![color schemes](/documentation/color_schemes/color-schemes.png)
 </details>
 
+### Imagery
+
+Images for the placeholder image on the Home Page and Paginated Pages and for the image on the Record Details with Reviews page were taken from pexels.com. User-generated images on the Home Page are taken from my own collection.
+
+Placeholder image
+
+![placeholder image](/documentation/imagery/placeholder-image.png)
+
+Record Details with Reviews page image
+
+![record details with Reviews page image](/documentation/imagery/image-on-record-details-with-reviews-page.png)
+
+User generated images
+
+![user generated images](/documentation/imagery/user-generated-images.png)
+
 ### Fonts
 
 <details>
@@ -101,6 +118,7 @@ Key features of the website include:
 📋 Project Features by Webpage
 
 🏠 Home Page (/)	
+
 - Responsive Bootstrap layout with grid system
 - Navbar with links: Home, Register, Login/Logout
 - Paginated record listings (title, author, featured image, excerpt)
@@ -108,42 +126,54 @@ Key features of the website include:
 - Footer with social media links (Facebook, Twitter, Instagram, YouTube)
 
 📑 Paginated Listings (/?page=2, /?page=3, …)	
+
 - Continuation of record listings with pagination controls
 - Same layout and features as Home Page
 - Ensures scalability for large record collections
 
 🎼 Record Detail Page (//)	
+
 - Full record information: title, artist, genre, year, record label, content
 - Featured image (via Cloudinary)
 - Author attribution (user who created the record)
 - Reviews section: reviewer name, body, timestamp
 - Review form (visible to logged‑in users)
+- Displays confirmation messages
+- Logged in authenticated users can add, edit and delete their own reviews
+- Site users can view approved reviews 
 - Review moderation: reviews require admin approval before appearing
 
 🔐 Register Page (/accounts/signup/)
+
 - User registration form with Bootstrap styling
 - Validation messages for incorrect or missing input
 - Creates new user accounts stored in Postgres
+- Displays confirmation message
 
 🔑 Login Page (/accounts/login/)	
+
 - Login form with username and password fields
 - Error messages for invalid credentials
 - Redirects to Home Page after successful login
+- Displays confirmation message
 
 🚪 Logout Page (/accounts/logout/)	
+
 - Logs out the user
 - Displays confirmation message
 - Navbar updates to show “You are not logged in.”
 
 ⚙️ Admin Dashboard (/admin/)	
+
 - Authentication required (staff/superuser only)
 - Manage Record model: create, edit, delete records; set status (Draft/Published)
 - Manage Review model: approve/disapprove reviews, edit/delete reviews
 - Manage User model: assign staff/superuser permissions
 - Built‑in search and filters
 - Full CRUD operations for all models
+- Displays confirmation messages
 
-✨ Technical Features include
+✨ Technical Features include:
 
 - Bootstrap integration for responsive design
 - Cloudinary for image hosting
@@ -154,11 +184,10 @@ Key features of the website include:
 </details>
 
 
-## Improvements and Future Developement
+## Improvements and Future Development
 
 <details>
 In my future enhancements I would add in the full scope as mentioned in the UX Design Process section of this README document. This would include the Should Have and Could Have User Stories mentioned in this README document.
-
 
 </details>
 
@@ -239,8 +268,75 @@ Record Details page with Reviews
 
 ### Testing
 
-</details>
+<details>
 
+Manual Testing was carried out during the Development process and again after Deployments. Please see below Manual Testing Report which highlights key functionality testing.
+
+# 📄 Manual Testing Report – RecordReviews Project
+
+---
+
+## 📌 Cover Page
+
+**Project Title:** RecordReviews – Capstone Project  
+**Author:** Denise Desmond  
+**Date of Testing:** December 2025  
+**Purpose of Testing:**  
+To validate that all features of the RecordReviews project function correctly across multiple devices (Desktop and Android). Testing includes navigation, CRUD operations for Records and Reviews, authentication, permissions, and access control.  
+
+**Devices Tested:**  
+- Desktop (Windows)  
+- Android (Mobile)  
+
+**Overall Result:**  
+✅ All features tested successfully. Expected and actual results matched across devices.  
+
+---
+
+# 🧪 Consolidated Manual Testing Matrix
+
+| **Page** | **Feature** | **Test Performed** | **Expected Result** | **Actual Result** | **Devices Tested** | **Status** |
+|----------|-------------|--------------------|---------------------|-------------------|--------------------|------------|
+| Home (`/`) | Navbar links | Click Home, Register, Login | Correct page loads | Correct page loads | Desktop, Android | ✅ Pass |
+| Home (`/`) | Record listings | Verify records display with title, author, excerpt, image | Records visible with correct info | Records visible | Desktop, Android | ✅ Pass |
+| Home (`/`) | Pagination | Click “Next” page | Loads next set of records | Records load on Page 2 | Desktop, Android | ✅ Pass |
+| Home (`/`) | Footer links | Click social media icons | Redirects to external social sites | Redirects correctly | Desktop, Android | ✅ Pass |
+| Paginated Listings (`/?page=2`) | Pagination continuity | Navigate between pages | Records continue to display correctly | Records display correctly | Desktop, Android | ✅ Pass |
+| Record Detail (`/<id>/`) | Record info | Open record detail | Full record info displayed | Info displayed correctly | Desktop, Android | ✅ Pass |
+| Record Detail (`/<id>/`) | Reviews section | View approved reviews | Reviews show reviewer, body, timestamp | Reviews display correctly | Desktop, Android | ✅ Pass |
+| Record Detail (`/<id>/`) | Review form (signed in) | Submit review as logged-in user | Review saved, pending admin approval | Review saved, hidden until approved | Desktop, Android | ✅ Pass |
+| Record Detail (`/<id>/`) | Review visibility (not signed in) | Visit record detail page while logged out | Approved reviews are visible | Reviews visible | Desktop, Android | ✅ Pass |
+| Record Detail (`/<id>/`) | Review form (not signed in) | Attempt to submit review while logged out | Form not available / redirect to login | Form hidden, prompt to log in | Desktop, Android | ✅ Pass |
+| Record Detail (`/<id>/`) | Review ownership – Add | Log in as User A, add review | Review saved for User A | Works as expected | Desktop, Android | ✅ Pass |
+| Record Detail (`/<id>/`) | Review ownership – Edit own | Log in as User A, edit their review | Changes saved and updated | Works as expected | Desktop, Android | ✅ Pass |
+| Record Detail (`/<id>/`) | Review ownership – Delete own | Log in as User A, delete their review | Review removed | Works as expected | Desktop, Android | ✅ Pass |
+| Record Detail (`/<id>/`) | Review ownership – Edit another’s | Log in as User B, attempt to edit User A’s review | Permission denied / option not available | Edit option not visible | Desktop, Android | ✅ Pass |
+| Record Detail (`/<id>/`) | Review ownership – Delete another’s | Log in as User B, attempt to delete User A’s review | Permission denied / option not available | Delete option not visible | Desktop, Android | ✅ Pass |
+| Register (`/accounts/signup/`) | Registration form | Submit valid details | Account created | Account created | Desktop, Android | ✅ Pass |
+| Register (`/accounts/signup/`) | Validation | Submit invalid/missing details | Error messages displayed | Errors displayed | Desktop, Android | ✅ Pass |
+| Login (`/accounts/login/`) | Login form | Enter valid credentials | User logged in, redirected to Home | Works as expected | Desktop, Android | ✅ Pass |
+| Login (`/accounts/login/`) | Validation | Enter invalid credentials | Error message shown | Error shown | Desktop, Android | ✅ Pass |
+| Logout (`/accounts/logout/`) | Logout action | Click logout | User logged out, confirmation shown | Works as expected | Desktop, Android | ✅ Pass |
+| Admin (`/admin/`) | Authentication | Attempt login as non-admin | Access denied | Access denied | Desktop, Android | ✅ Pass |
+| Admin (`/admin/`) | Record – Create | Add new record via admin | Record saved and visible on site | Record created successfully | Desktop, Android | ✅ Pass |
+| Admin (`/admin/`) | Record – Read | View record list in admin | Records display with correct info | Records display correctly | Desktop, Android | ✅ Pass |
+| Admin (`/admin/`) | Record – Update | Edit record details | Changes saved and reflected on site | Changes applied correctly | Desktop, Android | ✅ Pass |
+| Admin (`/admin/`) | Record – Delete | Delete a record | Record removed from site | Record deleted successfully | Desktop, Android | ✅ Pass |
+| Admin (`/admin/`) | Review – Create | Add new review via admin | Review saved and linked to record | Review created successfully | Desktop, Android | ✅ Pass |
+| Admin (`/admin/`) | Review – Read | View review list in admin | Reviews display with correct info | Reviews display correctly | Desktop, Android | ✅ Pass |
+| Admin (`/admin/`) | Review – Update | Edit review details | Changes saved and reflected on site | Changes applied correctly | Desktop, Android | ✅ Pass |
+| Admin (`/admin/`) | Review – Delete | Delete a review | Review removed from site | Review deleted successfully | Desktop, Android | ✅ Pass |
+
+---
+
+# ✅ Summary
+
+- All **features and CRUD operations** for Records and Reviews were tested.  
+- **Access control and permissions** confirmed:  
+  - Logged‑out users can view but not add reviews.  
+  - Logged‑in users can only manage their own reviews.  
+- Testing performed on **Desktop (Windows)** and **Android mobile devices**.  
+- **Status: Pass** for all features.
 
 </details>
 
