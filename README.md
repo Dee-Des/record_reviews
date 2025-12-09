@@ -253,7 +253,7 @@ Authenticated superuser logged in
 ## Improvements and Future Development
 
 <details>
-In my future enhancements I would add in the full scope as mentioned elsewhere in this README document. This would include the Should Have and Could Have User Stories mentioned in this README document.
+In my future enhancements I would add in the full scope as mentioned elsewhere in this README document. This would include the Should Have and Could Have User Stories mentioned in the UX Design Process section of this README document.
 
 </details>
 
