@@ -17,7 +17,7 @@ project board - https://github.com/users/Dee-Des/projects/11
     - [Imagery](#imagery)
     - [Fonts](#fonts)
 3. [Features](#features)
-4. [Improvements](#improvments-and-future-development)
+4. [Improvements and Future Development](#improvments-and-future-development)
 5. [Deployment](#deployment)
 6. [Testing and Validation](#testing-and-validation)
 7. [AI implementation](#ai-implementation)
