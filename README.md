@@ -98,25 +98,61 @@ For the fonts I used sans‑serif fonts
 <details>
 Key features of the website include:
 
-- User Registration and Authentication 
-Visitors can sign up, log in, and manage their accounts to participate in reviews.
+📋 Project Features by Webpage
 
-- Records Listings (Paginated)
-Users see a paginated list of vinyl records, which makes browsing manageable and organised.
+🏠 Home Page (/)	
+- Responsive Bootstrap layout with grid system
+- Navbar with links: Home, Register, Login/Logout
+- Paginated record listings (title, author, featured image, excerpt)
+- Each record card links to its detail page
+- Footer with social media links (Facebook, Twitter, Instagram, YouTube)
 
-- Record Detail pages
-Clicking on a record shows full content and associated reviews
+📑 Paginated Listings (/?page=2, /?page=3, …)	
+- Continuation of record listings with pagination controls
+- Same layout and features as Home Page
+- Ensures scalability for large record collections
 
-- Review System
-Users can add, edit and delete their own reviews.
-Site admins can approve/disapprove reviews.
+🎼 Record Detail Page (//)	
+- Full record information: title, artist, genre, year, record label, content
+- Featured image (via Cloudinary)
+- Author attribution (user who created the record)
+- Reviews section: reviewer name, body, timestamp
+- Review form (visible to logged‑in users)
+- Review moderation: reviews require admin approval before appearing
 
-- Admin Dashboard
-Site Admins can create, update, and delete records, manage drafts, and moderate reviews.
+🔐 Register Page (/accounts/signup/)
+- User registration form with Bootstrap styling
+- Validation messages for incorrect or missing input
+- Creates new user accounts stored in Postgres
 
-- Draft Records
-Site Admins can save unfinished records as drafts to publish later.
+🔑 Login Page (/accounts/login/)	
+- Login form with username and password fields
+- Error messages for invalid credentials
+- Redirects to Home Page after successful login
+
+🚪 Logout Page (/accounts/logout/)	
+- Logs out the user
+- Displays confirmation message
+- Navbar updates to show “You are not logged in.”
+
+⚙️ Admin Dashboard (/admin/)	
+- Authentication required (staff/superuser only)
+- Manage Record model: create, edit, delete records; set status (Draft/Published)
+- Manage Review model: approve/disapprove reviews, edit/delete reviews
+- Manage User model: assign staff/superuser permissions
+- Built‑in search and filters
+- Full CRUD operations for all models
+
+✨ Technical Features include
+
+- Bootstrap integration for responsive design
+- Cloudinary for image hosting
+- Postgres database for records, reviews, and users
+- Django models (Record, Review) with relationships
+- Pagination for record listings
+
 </details>
+
 
 ## Improvements and Future Developement
 
