@@ -184,6 +184,7 @@ Home Page - page 2 - User not logged in
 - Logged in authenticated users can add, edit and delete their own reviews
 - Site users can view approved reviews 
 - Review moderation: reviews require admin approval before appearing
+- Confirmation messages
 
 Record Details page with Review - User logged in
 
@@ -193,6 +194,17 @@ Record Details page with Review - User not logged in
 
 ![record details page with review when notlogged in](/static/images/features/record-details-page-with-review-when-not-logged-in.png)
 
+Record Details page with Review - review added confirmation
+
+![review added confirmation message](/static/images/features/confirmation%20messages/review-added-confirmation.png)
+
+Record Details page with Review - review updated confirmation
+
+![review updated confirmation message](/static/images/features/confirmation%20messages/review-updated-confirmation.png)
+
+Record Details page with Review - review deleted confirmation
+
+![review deleted confirmation message](/static/images/features/confirmation%20messages/review-deleted-confirmation.png)
 
 🔐 Register Page (/accounts/signup/)
 
