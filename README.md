@@ -13,7 +13,6 @@ project board - https://github.com/users/Dee-Des/projects/11
     - [User Stories](#user-stories)
     - [Wireframes](#wireframes)
     - [Responsiveness](#responsiveness)
-    - [ERD](#erd)
     - [Color Schemes](#color-schemes)
     - [Imagery](#imagery)
     - [Fonts](#fonts)
