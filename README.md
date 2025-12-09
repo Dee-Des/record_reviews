@@ -309,7 +309,17 @@ In my future enhancements I would add in the full scope as mentioned elsewhere i
 
 <details>
 
+- Deployment is to Heroku
+- High-Level Steps to deploy to Heroku: 
+  1. Configure environment variables for sensitive data (e.g., secret keys).
+  2. Deploy using GitHub integration.
+- Tested the deployed to Heroku application for consistent functionality and design when compared to the development environment.
+- Required accessibility validation carried out using manual testing and  Lighthouse.
+- Required security precautions
+  - Sensitive data is stored in environment variables.
+  - In the production environment DEBUG is set to False.
 </details>
+
 ## Testing and Validation
 
 <details>
