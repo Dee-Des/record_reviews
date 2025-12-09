@@ -146,6 +146,7 @@ Key features of the website include:
 - Navbar with links: Home, Register, Login/Logout
 - Paginated record listings (title, author, featured image, excerpt)
 - Each record card links to its detail page
+- Featured image (via Cloudinary)
 - Footer with social media links (Facebook, Twitter, Instagram, YouTube)
 - Confirmation message
 
@@ -179,11 +180,9 @@ Home Page - page 2 - User not logged in
 🎼 Record Detail Page (//)	
 
 - Full record information: title, artist, genre, year, record label, content
-- Featured image (via Cloudinary)
 - Author attribution (user who created the record)
 - Reviews section: reviewer name, body, timestamp
 - Review form (visible to logged‑in users)
-- Displays confirmation messages
 - Logged in authenticated users can add, edit and delete their own reviews
 - Site users can view approved reviews 
 - Review moderation: reviews require admin approval before appearing
