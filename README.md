@@ -23,6 +23,7 @@ project board - https://github.com/users/Dee-Des/projects/11
 6. [Testing and Validation](#testing-and-validation)
 7. [AI implementation](#ai-implementation)
 8. [Database](#database)
+    - [ERD](#erd)
 9. [References](#references)
 10. [Credits](#credits)
 11. [Tech used](#tech-used)
@@ -252,7 +253,7 @@ Authenticated superuser logged in
 ## Improvements and Future Development
 
 <details>
-In my future enhancements I would add in the full scope as mentioned in the UX Design Process section of this README document. This would include the Should Have and Could Have User Stories mentioned in this README document.
+In my future enhancements I would add in the full scope as mentioned elsewhere in this README document. This would include the Should Have and Could Have User Stories mentioned in this README document.
 
 </details>
 
@@ -437,11 +438,10 @@ To validate that all features of the RecordReviews project function correctly ac
 <details>
 The database is a Postgres database hosted by Code Insitute.
 
+This is the ERD for the full scope of the project. In future enhancements I would add in full scope.
 
-###      table
+![ERD](/documentation/capstone_erd/record-review-ERD.png)
 
-
-###     table
 </details>
 
 ## References
@@ -470,6 +470,7 @@ The database is a Postgres database hosted by Code Insitute.
 ## Learning Points
 
 <details>
+The env.py got mistakenly pushed to github so I created a new database, remigrated the models and repopulated the tables. I removed the env.py from the latest commit but it will still appear in prevous commits. I generated a new Django key and a new Cloudinary API key. As a result of this the project was not compromised. Although this was frustrating I learned alot more than had I got it right the first time.
 </details>
 
 
