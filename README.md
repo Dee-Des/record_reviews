@@ -24,8 +24,9 @@ project board - https://github.com/users/Dee-Des/projects/11
 7. [AI implementation](#ai-implementation)
 8. [Database](#database)
 9. [References](#references)
-10. [Tech used](#tech-used)
-11. [Learning points](#learning-points)
+10. [Credits](#credits)
+11. [Tech used](#tech-used)
+12. [Learning points](#learning-points)
 
 ## Overview
 
@@ -447,6 +448,14 @@ The database is a Postgres database hosted by Code Insitute.
 <details>
 
 </details>
+
+
+## Credits
+
+
+
+
+
 
 ## Tech
 <details>
