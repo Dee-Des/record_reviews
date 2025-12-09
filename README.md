@@ -286,6 +286,15 @@ Admin page access is restricted
 
 ![admin page access restricted](static/images/features/admin-page-access-is-restricted.png)
 
+Admin page approve and disapprove reviews by toggling Approved checkbox as appropriate and selecting 'Save' button
+
+![review approved checkbox on admin page](/static/images/features/approve-and-unapprove-reviews-in-admin.png)
+
+Change record status on Admin page using Status dropdown and selecting Save button
+
+![change record status on admin page](/static/images/features/draft-and-publish-records-in-admin-page-using-status-dropdown-and-selecting-save-button.png)
+
+
 Record created confirmation message on Admin
 
 ![record added confirmation](/static/images/features/confirmation_messages/record-added-confirmation.png)
