@@ -503,7 +503,7 @@ Copilot, ChatGPT 4.0, Diagram GPT and Eraser.io proved particularly helpful with
 Copilot was very helpful with code suggestions, debugging & troubleshooting.
 Lighthouse was used for accessiblity & performance checks.
 
-It is worth noting that I chose to use AI outside of my Visual Studio Code to allow me more control over my code.
+It is worth noting that I chose to use AI outside of my Visual Studio Code. The reasons for this were twofold. Firstly I wanted to maintain full control over my code.Ssecondly I wanted to gain as much knowledge about full stack software development on this course as I possibly could. I feel I have achieved both.
 
 ## Database
 <details>
@@ -515,9 +515,17 @@ This is the ERD for the full scope of the project. In future enhancements I woul
 
 </details>
 
-## References
-<details>
 
+## References
+
+<details>
+At a high level,the key ones are:
+
+- Django Documentation
+- Project brief by Code Institute
+- Bootstrap 5.3 Documentation.
+- Django Documentation
+- Course materials by Code Institute
 </details>
 
 
@@ -544,6 +552,7 @@ This is the ERD for the full scope of the project. In future enhancements I woul
 * The palette was created from the project's css stylesheet with assistance from Figma
 
 
+
 ## Agile
 <details>
 - This project was managed using agile principles.
@@ -562,6 +571,7 @@ This is the ERD for the full scope of the project. In future enhancements I woul
 - Agile methodology - for Project planning and tracking
 - Git & GitHub - for Version Control
 - Heroku - for deployment
+- Font Awesome Icons, Google Fonts, Balsamiq
 
 ## Learning Points
 
@@ -571,7 +581,7 @@ The env.py got mistakenly pushed to github so I created a new database, remigrat
 
 ## Acknowledgements
 
-
+Sincere thank you to the Code Institute staff team - special mentions Dillon McCaffrey, Tom Cowen and Mark Briscoe for their consistent encouragement and support throughout.
 
 
 
