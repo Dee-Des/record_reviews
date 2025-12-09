@@ -88,7 +88,7 @@ Logout Page
 </details>
 
 ### Imagery
-
+<details>
 Images for the placeholder image on the Home Page and Paginated Pages and for the image on the Record Details with Reviews page were taken from pexels.com. User-generated images on the Home Page are taken from my own collection.
 
 Placeholder image
@@ -102,6 +102,8 @@ Record Details with Reviews page image
 User generated images
 
 ![user generated images](/documentation/imagery/user-generated-images.png)
+
+</details>
 
 ### Responsiveness
 
