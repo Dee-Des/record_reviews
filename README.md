@@ -1,4 +1,4 @@
-# RecordReviews
+# Record Reviews
 ### By Denise Desmond
 
 live site - https://capstone-project-recordreviews-5a6a26926cda.herokuapp.com/
@@ -26,11 +26,25 @@ project board - https://github.com/users/Dee-Des/projects/11
 9. [References](#references)
 10. [Credits](#credits)
 11. [Tech used](#tech-used)
-12. [Learning points](#learning-points)
+12. [Agile](#agile)
+13. [Learning points](#learning-points)
 
 ## Overview
 
-A website built using Django which allows users to share and review vinyl records.
+A website built using Django which allows users to share and review vinyl records. I was inspired to build Record Reviews by my own interest in vinyl collection and the fact I have friends who own and run independent record labels. 
+
+Record Reviews is my Full Stack Capstone Project. This project uses and demonstrates a culmination of my learning on the course.
+
+Technologies and Methodologies used:
+
+- PostgreSQL, integrated through Django - for Database Management
+- HTML, CSS, JavaScript - for Frontend Development
+- Python, Django framework - for Backend Development:
+- Cloudinary - for API
+- Using AI tools, e.g. Copilot, ChatGPT 4.0, Diagram GPT in the planning and debugging process
+- Agile methodology - for Project planning and tracking
+- Git & GitHub - for Version Control
+- Heroku - for deployment
 
 ## UX Design Process
 <details>
@@ -401,13 +415,13 @@ Record Detail page
 
 Manual Testing was carried out during the Development process and again after Deployments. Please see below Manual Testing Report which highlights key functionality testing.
 
-# 📄 Manual Testing Report – RecordReviews Project
+# 📄 Manual Testing Report – Record Reviews Project
 
 ---
 
 ## 📌 Cover Page
 
-**Project Title:** RecordReviews – Capstone Project  
+**Project Title:** Record  Reviews – Capstone Project  
 **Author:** Denise Desmond 
 **Date of Testing:** December 2025  
 **Purpose of Testing:**  
@@ -482,20 +496,14 @@ To validate that all features of the RecordReviews project function correctly ac
 
 ## AI Implementation
 
-<details>
+AI tools were used to assist with planning, code suggestions, debugging, troubleshooting, and accessibility & performance checks. 
 
-### Code Creation
+Copilot, ChatGPT 4.0, Diagram GPT and Eraser.io proved particularly helpful with planning.
 
+Copilot was very helpful with code suggestions, debugging & troubleshooting.
+Lighthouse was used for accessiblity & performance checks.
 
-### Debugging
-
-
-### Performance and Experience
-
-
-### Development Process
-
-</details>
+It is worth noting that I chose to use AI outside of my Visual Studio Code to allow me more control over my code.
 
 ## Database
 <details>
@@ -515,26 +523,53 @@ This is the ERD for the full scope of the project. In future enhancements I woul
 
 ## Credits
 
+### Code
+
+* Extra code was adapted from Code Institute's walkthrough project - 'Codestar' project.
+
+### Record details content
+
+* Adapted from wikipaedia
+
+### ERD
+
+* Created with assistance from Diagram GPT and Eraser.io
+
+### Imagery/Media
+
+* The imagery/media for the placeholder image on the Home Page and Home Page Page 2 was taken from pexels.com as was the image on the Record Detail page
+
+### Colour scheme 
+
+* The palette was created from the project's css stylesheet with assistance from Figma
 
 
-
+## Agile
+<details>
+- This project was managed using agile principles.
+- Development of features took guidance from user stories and MOSCOW prioritisation.
+- A Kanban board on Github was used to track tickets.
+</details>
 
 
 ## Tech
 <details>
-- CSS
-- HTML
-- Django
-- Bootstrap
-- Copilot
-- Postgres
-</details>
+- PostgreSQL, integrated through Django - for Database Management
+- HTML, CSS, Boostrap, JavaScript - for Frontend Development
+- Python, Django framework - for Backend Development
+- Cloudinary - API
+- Using AI tools, e.g. Copilot, ChatGPT 4.0, Diagram GPT in the planning and debugging process
+- Agile methodology - for Project planning and tracking
+- Git & GitHub - for Version Control
+- Heroku - for deployment
 
 ## Learning Points
 
 <details>
 The env.py got mistakenly pushed to github so I created a new database, remigrated the models and repopulated the tables. I removed the env.py from the latest commit but it will still appear in prevous commits. I generated a new Django key and a new Cloudinary API key. As a result of this the project was not compromised. Although this was frustrating I learned alot more than had I got it right the first time.
 </details>
+
+## Acknowledgements
 
 
 
