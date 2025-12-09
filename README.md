@@ -147,7 +147,7 @@ Key features of the website include:
 - Paginated record listings (title, author, featured image, excerpt)
 - Each record card links to its detail page
 - Footer with social media links (Facebook, Twitter, Instagram, YouTube)
-- Confirmation messages
+- Confirmation message
 
 Home Page - User logged in
 
@@ -156,6 +156,9 @@ Home Page - User logged in
 Home Page - User not logged in
 ![home page when logged in](/static/images/features/home-page-when-not-logged-in.png)
 
+User has signed in confirmation message
+
+![user has signed in confirmation message](/static/images/features/confirmation_messages/user-has-signed-in-confirmation-message.png)
 
 
 📑 Paginated Listings (/?page=2, /?page=3, …)	
@@ -196,47 +199,61 @@ Record Details page with Review - User not logged in
 
 Record Details page with Review - review added confirmation
 
-![review added confirmation message](/static/images/features/confirmation%20messages/review-added-confirmation.png)
+![review added confirmation message](/static/images/features/confirmation_messages/review-added-confirmation.png)
 
 Record Details page with Review - review updated confirmation
 
-![review updated confirmation message](/static/images/features/confirmation%20messages/review-updated-confirmation.png)
+![review updated confirmation message](/static/images/features/confirmation_messages/review-updated-confirmation.png)
 
 Record Details page with Review - review deleted confirmation
 
-![review deleted confirmation message](/static/images/features/confirmation%20messages/review-deleted-confirmation.png)
+![review deleted confirmation message](/static/images/features/confirmation_messages//review-deleted-confirmation.png)
+
 
 🔐 Register Page (/accounts/signup/)
 
 - User registration form with Bootstrap styling
 - Validation messages for incorrect or missing input
 - Creates new user accounts stored in Postgres
-- Displays confirmation message
+- Confirmation message
 
 Register page
 
 ![register page](/static/images/features/register-page.png)
+
+User has registered and signed in confirmation message
+
+![user has registered and signed in confirmation message](/static/images/features/confirmation_messages/user-has-registered-and-signed-in-confirmation.png)
 
 🔑 Login Page (/accounts/login/)	
 
 - Login form with username and password fields
 - Error messages for invalid credentials
 - Redirects to Home Page after successful login
-- Displays confirmation message
+- Confirmation message
 
 Login page
 
 ![login page](static/images/features/login-page.png)
 
+User has signed in confirmation message
+
+![user has signed in confirmation message](/static/images/features/confirmation_messages/user-has-signed-in-confirmation-message.png)
+
 🚪 Logout Page (/accounts/logout/)	
 
 - Logs out the user
-- Displays confirmation message
 - Navbar updates to show “You are not logged in.”
+- Confirmation message
+
 
 Logout page
 
 ![logout page](/static/images/features/logout-page.png)
+
+User has signed out confirmation message
+
+![user has signed out confirmation message](/static/images/features/confirmation_messages/user-has-signed-out-confirmation.png)
 
 ⚙️ Admin Dashboard (/admin/)	
 
@@ -246,7 +263,7 @@ Logout page
 - Manage User model: assign staff/superuser permissions
 - Built‑in search and filters
 - Full CRUD operations for all models
-- Displays confirmation messages
+- Confirmation messages
 
 Authenticated superuser logged in
 
@@ -258,15 +275,15 @@ Admin page access is restricted
 
 Record created confirmation message on Admin
 
-![record added confirmation](/static/images/features/Confirmation%20messages/record-added-confirmation.png)
+![record added confirmation](/static/images/features/confirmation_messages/record-added-confirmation.png)
 
 Record updated confirmation message on Admin
 
-![record updated confirmation](/static/images/features/Confirmation%20messages/record-changed-confrmation.png)
+![record updated confirmation](/static/images/features/confirmation_messages/record-changed-confrmation.png)
 
 Record deleted confirmation message on Admin
 
-![record deleted confirmation](/static/images/features/Confirmation%20messages/record-deleted-confirmation.png)
+![record deleted confirmation](/static/images/features/confirmation_messages/record-deleted-confirmation.png)
 
 
 
