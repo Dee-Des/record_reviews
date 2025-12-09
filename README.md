@@ -12,6 +12,7 @@ project board - https://github.com/users/Dee-Des/projects/11
 2. [UX Design Process](#ux-design-process)
     - [User Stories](#user-stories)
     - [Wireframes](#wireframes)
+    - [Responsiveness](#responsiveness)
     - [ERD](#erd)
     - [Color Schemes](#color-schemes)
     - [Imagery](#imagery)
@@ -101,6 +102,14 @@ Record Details with Reviews page image
 User generated images
 
 ![user generated images](/documentation/imagery/user-generated-images.png)
+
+### Responsiveness
+
+Record Reviews is built to be fully responsive across all device sizes. This is to ensure an optimal user experience when accessed on mobile, tablet, or desktop. The design follows a mobile-first approach.
+
+The layout seamlessly adapts to different screen sizes.
+
+![]()
 
 ### Fonts
 
