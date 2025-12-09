@@ -91,15 +91,15 @@ Logout Page
 
 ### Imagery
 <details>
-Images for the placeholder image on the Home Page and Paginated Pages and for the image on the Record Details with Reviews page were taken from pexels.com. User-generated images on the Home Page are taken from my own collection.
+Images for the placeholder image on the Home Page and Paginated Pages and for the image on the Record Detail page were taken from pexels.com. User-generated images on the Home Page are taken from my own collection.
 
 Placeholder image
 
 ![placeholder image](/documentation/imagery/placeholder-image.png)
 
-Record Details with Reviews page image
+Record Detail page image
 
-![record details with Reviews page image](/documentation/imagery/image-on-record-details-with-reviews-page.png)
+![record detail page image](/documentation/imagery/image-on-record-detail-page.png)
 
 User generated images
 
@@ -147,6 +147,7 @@ Key features of the website include:
 - Paginated record listings (title, author, featured image, excerpt)
 - Each record card links to its detail page
 - Featured image (via Cloudinary)
+- Placeholder image when no user-generated image provided
 - Footer with social media links (Facebook, Twitter, Instagram, YouTube)
 - Confirmation message
 
@@ -188,25 +189,25 @@ Home Page - page 2 - User not logged in
 - Review moderation: reviews require admin approval before appearing
 - Confirmation messages
 
-Record Details page with Review - User logged in
+Record Detail page - User logged in
 
-![record details page with review when logged in](/static/images/features/record-details-page-with-review-when-logged-in.png)
+![record detail page when logged in](/static/images/features/record-detail-page-when-logged-in.png)
 
-Record Details page with Review - User not logged in
+Record Detail page - User not logged in
 
-![record details page with review when notlogged in](/static/images/features/record-details-page-with-review-when-not-logged-in.png)
+![record detail page when not logged in](/static/images/features/record-detail-page-when-not-logged-in.png)
 
-Record Details page with Review - review added confirmation
+Record Detail page - review added confirmation
 
 ![review added confirmation message](/static/images/features/confirmation_messages/review-added-confirmation.png)
 
-Record Details page with Review - review updated confirmation
+Record Detail page - review updated confirmation
 
 ![review updated confirmation message](/static/images/features/confirmation_messages/review-updated-confirmation.png)
 
-Record Details page with Review - review deleted confirmation
+Record Detail page  - review deleted confirmation
 
-![review deleted confirmation message](/static/images/features/confirmation_messages//review-deleted-confirmation.png)
+![review deleted confirmation message](/static/images/features/confirmation_messages/review-deleted-confirmation.png)
 
 
 🔐 Register Page (/accounts/signup/)
@@ -317,9 +318,9 @@ Home page - page 2
 
 ![home page page 2](/documentation/validation/html/home_page/home-page-page-2.png) 
 
-Record details page with reviews
+Record detail page
 
-![record details and reviews page](/documentation/validation/html/record_details_and_reviews_page/record-details-and-reviews-page.png)
+![record detail page](/documentation/validation/html/record_detail_page/record-detail-page.png)
 
 ### CSS Validation
 
@@ -375,9 +376,9 @@ Home Page - page 2
 
 ![lighthouse validation home page - page 2](/documentation/validation/lighthouse/home-page-page-2.png)
 
-Record Details page with Reviews
+Record Detail page
 
-![lighthouse validation record details page with reviews](/documentation/validation/lighthouse/record-details-page-with-reviews.png)
+![lighthouse validation record detail page](/documentation/validation/lighthouse/record-detail-page.png)
 
 ### Testing
 
