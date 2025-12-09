@@ -147,6 +147,7 @@ Key features of the website include:
 - Paginated record listings (title, author, featured image, excerpt)
 - Each record card links to its detail page
 - Footer with social media links (Facebook, Twitter, Instagram, YouTube)
+- Confirmation messages
 
 Home Page - User logged in
 
@@ -154,6 +155,7 @@ Home Page - User logged in
 
 Home Page - User not logged in
 ![home page when logged in](/static/images/features/home-page-when-not-logged-in.png)
+
 
 
 📑 Paginated Listings (/?page=2, /?page=3, …)	
@@ -237,6 +239,23 @@ Logout page
 Authenticated superuser logged in
 
 ![admin dashboard - authenticated superuser logged in](/static/images/features/admin-page-site-admin-user-logged-in.png)
+
+Admin page access is restricted
+
+![admin page access restricted](static/images/features/admin-page-access-is-restricted.png)
+
+Record created confirmation message on Admin
+
+![record added confirmation](/static/images/features/Confirmation%20messages/record-added-confirmation.png)
+
+Record updated confirmation message on Admin
+
+![record updated confirmation](/static/images/features/Confirmation%20messages/record-changed-confrmation.png)
+
+Record deleted confirmation message on Admin
+
+![record deleted confirmation](/static/images/features/Confirmation%20messages/record-deleted-confirmation.png)
+
 
 
 ✨ Technical Features include:
