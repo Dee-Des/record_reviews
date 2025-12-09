@@ -17,7 +17,7 @@ project board - https://github.com/users/Dee-Des/projects/11
     - [Imagery](#imagery)
     - [Fonts](#fonts)
 3. [Features](#features)
-4. [Improvements and Future Development](#improvments-and-future-development)
+4. [Improvements and Future Development](#improvements-and-future-development)
 5. [Deployment](#deployment)
 6. [Testing and Validation](#testing-and-validation)
 7. [AI implementation](#ai-implementation)
@@ -503,7 +503,7 @@ Copilot, ChatGPT 4.0, Diagram GPT and Eraser.io proved particularly helpful with
 Copilot was very helpful with code suggestions, debugging & troubleshooting.
 Lighthouse was used for accessiblity & performance checks.
 
-It is worth noting that I chose to use AI outside of my Visual Studio Code. The reasons for this were twofold. Firstly I wanted to maintain full control over my code.Ssecondly I wanted to gain as much knowledge about full stack software development on this course as I possibly could. I feel I have achieved both.
+It is worth noting that I chose to use AI outside of my Visual Studio Code. The reasons for this were twofold. Firstly I wanted to maintain full control over my code. Secondly I wanted to gain as much knowledge about full stack software development on this course as I possibly could. I feel I have achieved both.
 
 ## Database
 <details>
@@ -524,7 +524,6 @@ At a high level,the key ones are:
 - Django Documentation
 - Project brief by Code Institute
 - Bootstrap 5.3 Documentation.
-- Django Documentation
 - Course materials by Code Institute
 </details>
 
@@ -564,18 +563,20 @@ At a high level,the key ones are:
 ## Tech
 <details>
 - PostgreSQL, integrated through Django - for Database Management
-- HTML, CSS, Boostrap, JavaScript - for Frontend Development
+- HTML, CSS, Bootstrap, JavaScript - for Frontend Development
 - Python, Django framework - for Backend Development
 - Cloudinary - API
 - Using AI tools, e.g. Copilot, ChatGPT 4.0, Diagram GPT in the planning and debugging process
 - Agile methodology - for Project planning and tracking
 - Git & GitHub - for Version Control
-- Heroku - for deployment
+- Heroku - for deployment (Sensitive data stored securely in Heroku config)
 - Font Awesome Icons, Google Fonts, Balsamiq
 
 ## Learning Points
 
 <details>
+Reinforced importance of .gitignore and secure handling of environment variables.
+
 The env.py got mistakenly pushed to github so I created a new database, remigrated the models and repopulated the tables. I removed the env.py from the latest commit but it will still appear in prevous commits. I generated a new Django key and a new Cloudinary API key. As a result of this the project was not compromised. Although this was frustrating I learned alot more than had I got it right the first time.
 </details>
 
@@ -583,6 +584,7 @@ The env.py got mistakenly pushed to github so I created a new database, remigrat
 
 Sincere thank you to the Code Institute staff team - special mentions Dillon McCaffrey, Tom Cowen and Mark Briscoe for their consistent encouragement and support throughout.
 
+Thank you also to my peers in Code Institute and to open‑source contributors.
 
 
 
