@@ -279,10 +279,10 @@ Manual Testing was carried out during the Development process and again after De
 ## 📌 Cover Page
 
 **Project Title:** RecordReviews – Capstone Project  
-**Author:** Denise Desmond  
+**Author:** [Denise Desmond]  
 **Date of Testing:** December 2025  
 **Purpose of Testing:**  
-To validate that all features of the RecordReviews project function correctly across multiple devices (Desktop and Android). Testing includes navigation, CRUD operations for Records and Reviews, authentication, permissions, and access control.  
+To validate that all features of the RecordReviews project function correctly across multiple devices (Desktop and Android). Testing includes navigation, CRUD operations for Records and Reviews, authentication, permissions, access control, notifications, and non‑functional requirements (validation, responsiveness, accessibility).  
 
 **Devices Tested:**  
 - Desktop (Windows)  
@@ -295,8 +295,8 @@ To validate that all features of the RecordReviews project function correctly ac
 
 # 🧪 Consolidated Manual Testing Matrix
 
-| **Page** | **Feature** | **Test Performed** | **Expected Result** | **Actual Result** | **Devices Tested** | **Status** |
-|----------|-------------|--------------------|---------------------|-------------------|--------------------|------------|
+| **Page/Area** | **Feature** | **Test Performed** | **Expected Result** | **Actual Result** | **Devices Tested** | **Status** |
+|---------------|-------------|--------------------|---------------------|-------------------|--------------------|------------|
 | Home (`/`) | Navbar links | Click Home, Register, Login | Correct page loads | Correct page loads | Desktop, Android | ✅ Pass |
 | Home (`/`) | Record listings | Verify records display with title, author, excerpt, image | Records visible with correct info | Records visible | Desktop, Android | ✅ Pass |
 | Home (`/`) | Pagination | Click “Next” page | Loads next set of records | Records load on Page 2 | Desktop, Android | ✅ Pass |
@@ -304,19 +304,31 @@ To validate that all features of the RecordReviews project function correctly ac
 | Paginated Listings (`/?page=2`) | Pagination continuity | Navigate between pages | Records continue to display correctly | Records display correctly | Desktop, Android | ✅ Pass |
 | Record Detail (`/<id>/`) | Record info | Open record detail | Full record info displayed | Info displayed correctly | Desktop, Android | ✅ Pass |
 | Record Detail (`/<id>/`) | Reviews section | View approved reviews | Reviews show reviewer, body, timestamp | Reviews display correctly | Desktop, Android | ✅ Pass |
-| Record Detail (`/<id>/`) | Review form (signed in) | Submit review as logged-in user | Review saved, pending admin approval | Review saved, hidden until approved | Desktop, Android | ✅ Pass |
+| Record Detail (`/<id>/`) | Review form (signed in) | Submit review | Review saved, pending admin approval | Review saved, hidden until approved | Desktop, Android | ✅ Pass |
 | Record Detail (`/<id>/`) | Review visibility (not signed in) | Visit record detail page while logged out | Approved reviews are visible | Reviews visible | Desktop, Android | ✅ Pass |
 | Record Detail (`/<id>/`) | Review form (not signed in) | Attempt to submit review while logged out | Form not available / redirect to login | Form hidden, prompt to log in | Desktop, Android | ✅ Pass |
-| Record Detail (`/<id>/`) | Review ownership – Add | Log in as User A, add review | Review saved for User A | Works as expected | Desktop, Android | ✅ Pass |
-| Record Detail (`/<id>/`) | Review ownership – Edit own | Log in as User A, edit their review | Changes saved and updated | Works as expected | Desktop, Android | ✅ Pass |
-| Record Detail (`/<id>/`) | Review ownership – Delete own | Log in as User A, delete their review | Review removed | Works as expected | Desktop, Android | ✅ Pass |
-| Record Detail (`/<id>/`) | Review ownership – Edit another’s | Log in as User B, attempt to edit User A’s review | Permission denied / option not available | Edit option not visible | Desktop, Android | ✅ Pass |
-| Record Detail (`/<id>/`) | Review ownership – Delete another’s | Log in as User B, attempt to delete User A’s review | Permission denied / option not available | Delete option not visible | Desktop, Android | ✅ Pass |
+| Record Detail (`/<id>/`) | Review ownership – Add/Edit/Delete | User manages own review | Only own reviews editable/deletable | Works as expected | Desktop, Android | ✅ Pass |
+| Record Detail (`/<id>/`) | Review ownership – Other users | Attempt to edit/delete another’s review | Permission denied | Options not visible | Desktop, Android | ✅ Pass |
 | Register (`/accounts/signup/`) | Registration form | Submit valid details | Account created | Account created | Desktop, Android | ✅ Pass |
 | Register (`/accounts/signup/`) | Validation | Submit invalid/missing details | Error messages displayed | Errors displayed | Desktop, Android | ✅ Pass |
 | Login (`/accounts/login/`) | Login form | Enter valid credentials | User logged in, redirected to Home | Works as expected | Desktop, Android | ✅ Pass |
 | Login (`/accounts/login/`) | Validation | Enter invalid credentials | Error message shown | Error shown | Desktop, Android | ✅ Pass |
+| **Login (`/accounts/login/`)** | Login notification | Successful login | Confirmation message displayed | Message displayed | Desktop, Android | ✅ Pass |
 | Logout (`/accounts/logout/`) | Logout action | Click logout | User logged out, confirmation shown | Works as expected | Desktop, Android | ✅ Pass |
+| **Logout (`/accounts/logout/`)** | Logout notification | Successful logout | Confirmation message displayed | Message displayed | Desktop, Android | ✅ Pass |
+| **Global (Navbar)** | Logged‑in state indicator | Check navbar when logged in/out | Shows “You are logged in” or “You are not logged in” | Correct state shown | Desktop, Android | ✅ Pass |
+| **Templates** | HTML validation | Run templates through W3C validator | No validation errors | No errors found | Desktop | ✅ Pass |
+| **CSS** | CSS validation | Run stylesheets through Jigsaw validator | No validation errors | No errors found | Desktop | ✅ Pass |
+| **Global (Responsive Design)** | Responsiveness | Resize browser / test on Android | Layout adapts to screen width | Responsive across devices | Desktop, Android | ✅ Pass |
+| **Global (Accessibility)** | Accessibility & performance | Test with Lighthouse/Wave | Meets minimum accessibility/performance | Requirements met | Desktop | ✅ Pass |
+| **Records (Frontend Form)** | Record – Create | Logged‑in user submits record form | Record created and saved | Record created successfully | Desktop, Android | ✅ Pass |
+| **Records (Frontend Form)** | Record – Create notification | After record creation | Confirmation message displayed | Message displayed | Desktop, Android | ✅ Pass |
+| **Records (Frontend Form)** | Record – Edit | Logged‑in user edits own record | Changes saved and updated | Works as expected | Desktop, Android | ✅ Pass |
+| **Records (Frontend Form)** | Record – Edit notification | After record edit | Confirmation message displayed | Message displayed | Desktop, Android | ✅ Pass |
+| **Records (Frontend Form)** | Record – Delete | Logged‑in user deletes own record | Record removed | Works as expected | Desktop, Android | ✅ Pass |
+| **Records (Frontend Form)** | Record – Delete notification | After record deletion | Confirmation message displayed | Message displayed | Desktop, Android | ✅ Pass |
+| **Records (Frontend Form)** | Record manipulation (logged‑out) | Attempt to create/edit/delete while logged out | Access denied | Access denied | Desktop, Android | ✅ Pass |
+| **Records (Restricted Access)** | Authorised access | Attempt to access restricted records/information | Only authorised users can access | Access correctly restricted | Desktop, Android | ✅ Pass |
 | Admin (`/admin/`) | Authentication | Attempt login as non-admin | Access denied | Access denied | Desktop, Android | ✅ Pass |
 | Admin (`/admin/`) | Record – Create | Add new record via admin | Record saved and visible on site | Record created successfully | Desktop, Android | ✅ Pass |
 | Admin (`/admin/`) | Record – Read | View record list in admin | Records display with correct info | Records display correctly | Desktop, Android | ✅ Pass |
@@ -331,11 +343,9 @@ To validate that all features of the RecordReviews project function correctly ac
 
 # ✅ Summary
 
-- All **features and CRUD operations** for Records and Reviews were tested.  
-- **Access control and permissions** confirmed:  
-  - Logged‑out users can view but not add reviews.  
-  - Logged‑in users can only manage their own reviews.  
-- Testing performed on **Desktop (Windows)** and **Android mobile devices**.  
+- All **functional tests** (login state, registration, authentication, CRUD for records and reviews, notifications, permissions) passed.  
+- All **non‑functional tests** (HTML validation, CSS validation, responsiveness, accessibility & performance) passed.  
+- Tested thoroughly on **Desktop (Windows)** and **Android mobile devices**.  
 - **Status: Pass** for all features.
 
 </details>
