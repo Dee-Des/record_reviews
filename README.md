@@ -360,6 +360,7 @@ To validate that all features of the RecordReviews project function correctly ac
 - **Status: Pass** for all features.
 
 </details>
+</details>
 
 ## AI Implementation
 
