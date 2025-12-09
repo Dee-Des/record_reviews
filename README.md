@@ -109,9 +109,19 @@ User generated images
 
 Record Reviews is built to be fully responsive across all device sizes. This is to ensure an optimal user experience when accessed on mobile, tablet, or desktop. The design follows a mobile-first approach.
 
-The layout seamlessly adapts to different screen sizes.
+The layout seamlessly adapts to different screen sizes thanks to the use of Flexbox and bootstrap.
 
-![]()
+Home page on Mobile
+
+![responsiveness - mobile](/static/images/responsiveness/responsiveness-mobile-android.jpg)
+
+Home page on Tablet
+
+![responsiveness - tablet](static/images/responsiveness/responsiveness-ipad%20mini.png)
+
+Home page on Desktop
+
+![responsiveness - desktop](/static/images/responsiveness/responsiveness-desktop.png)
 
 ### Fonts
 
