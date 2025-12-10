@@ -9,6 +9,22 @@ from .forms import ReviewForm
 
 
 class RecordList(generic.ListView):
+    """
+    Returns all published posts in :model:`record.Record`
+    and displays them in a page of six posts.  
+
+    **Context**
+
+      ``queryset``
+        All published instances of :model:`record.Record`
+    ``paginate_by``
+        Number of posts per page.
+        
+    **Template:**
+
+    :template:`record/index.html`
+    
+    """
     queryset = Record.objects.filter(status=1)
     template_name = "record/index.html"
     paginate_by = 6
@@ -22,6 +38,12 @@ def record_detail(request, id):
 
     ``record``
         An instance of :model:`record.Record`.
+        ``reviews``
+        All approved reviews related to the record.
+    ``review_count``
+        A count of approved reviews related to the record.
+    ``review_form``
+        An instance of :form:`record.ReviewForm`
 
     **Template:**
 
@@ -61,7 +83,17 @@ def record_detail(request, id):
 
 def review_edit(request, id, review_id):
     """
-    view to edit reviews
+    Display an individual review for edit.
+
+    **Context**
+
+    ``record``
+        An instance of :model:`record.Record`.
+    ``review``
+        A single review related to the record.
+    ``review_form``
+        An instance of :form:`record.ReviewForm`
+    
     """
 
     if request.method == "POST":
@@ -86,7 +118,14 @@ def review_edit(request, id, review_id):
 
 def review_delete(request, id, review_id):
     """
-    view to delete review
+    Delete an individual review.
+
+    **Context**
+
+    ``record``
+        An instance of :model:`record.Record`.
+    ``review``
+        A single review related to the record.
     """
     queryset = Record.objects.filter(status=1)
     record = get_object_or_404(queryset, id=id)

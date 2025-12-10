@@ -8,6 +8,10 @@ from .forms import RecordForm
 # customise how registered models will appear on the admin site
 @admin.register(Record)
 class RecordAdmin(SummernoteModelAdmin):
+    """
+    Lists fields for display in admin, fields for search, 
+    field filters and rich-text editor.
+    """
 
     form = RecordForm
     list_display = ('title', 'status', 'created_on')

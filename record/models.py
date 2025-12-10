@@ -8,6 +8,9 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 # Create model
 class Record(models.Model):
+    """
+    Stores a signle record entry related to :model:'auth.User'.
+    """
     title = models.CharField(max_length=200, unique=True)
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="records"
@@ -39,6 +42,10 @@ class Record(models.Model):
 
 
 class Review(models.Model):
+    """
+    Stores a single review entry related to :model: 'auth.User'
+    and :model:'record.Record'.
+    """
     record = models.ForeignKey(
         Record, on_delete=models.CASCADE, related_name="reviews")
     author = models.ForeignKey(
