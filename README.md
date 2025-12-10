@@ -336,13 +336,16 @@ In my future enhancements I would add in the full scope as mentioned also in ERD
 
 - Deployment is to Heroku
 - High-Level Steps to deploy to Heroku: 
-  1. Configure environment variables for sensitive data (e.g., secret keys).
-  2. Deploy using GitHub integration.
-- Tested the deployed to Heroku application for consistent functionality and design when compared to the development environment.
-- Required accessibility validation carried out using manual testing and  Lighthouse.
-- Required security precautions
-  - Sensitive data is stored in environment variables.
-  - In the production environment DEBUG is set to False.
+  1. Configure the Django settings to handle both development and production environments.
+  2. Environment variables are used to manage sensitive information and configuration settings. 
+  3. PostgreSQL is the database used for production on Heroku.
+  4. WhiteNoise middleware is used to manage static files in production.
+  5. Debug mode is set to False in the settings file before commiting and pushing to Github.
+  6. The project is deployed to Heroku using Github integration. Deployment is from the main branch. 
+  7. The requirements.txt file handles the dependecies to ensure that all required packages are installed in the production environment.
+  8. The deployed to Heroku project is tested to check that the functionality and design are consistnt with those on the development environment.
+  9. Testing and validation is carried out on the deployed to Herku project.
+  10. To emphasise again environment variables store sensitive data and DEBUG is set to False in the production environment.
 </details>
 
 
