@@ -12,9 +12,9 @@ project board - https://github.com/users/Dee-Des/projects/11
 2. [UX Design Process](#ux-design-process)
     - [User Stories](#user-stories)
     - [Wireframes](#wireframes)
-    - [Responsiveness](#responsiveness)
     - [Color Schemes](#color-schemes)
-    - [Imagery](#imagery)
+    - [Imagery/Media](#imagery)
+    - [Responsiveness](#responsiveness)
     - [Fonts](#fonts)
 3. [Features](#features)
 4. [Improvements and Future Development](#improvements-and-future-development)
@@ -25,15 +25,15 @@ project board - https://github.com/users/Dee-Des/projects/11
     - [ERD](#erd)
 9. [References](#references)
 10. [Credits](#credits)
-11. [Tech used](#tech-used)
-12. [Agile](#agile)
+11. [Agile](#agile)
+12. [Tech used](#tech-used)
 13. [Learning points](#learning-points)
+14. [Acknoledgements](#acknowledgements)
 
 ## Overview
 
-A website built using Django which allows users to share and review vinyl records. I was inspired to build Record Reviews by my own interest in vinyl collection and the fact I have friends who own and run independent record labels. 
-
-Record Reviews is my Full Stack Capstone Project. This project uses and demonstrates a culmination of my learning on the course.
+<details>
+A website built using Django which allows users to share and review vinyl records. I was inspired to build Record Reviews by my own interest in vinyl collection and the fact I have friends who own and run independent record labels.Record Reviews is my Full Stack Capstone Project. This project uses and demonstrates a culmination of my learning on the course.
 
 Technologies and Methodologies used:
 
@@ -45,6 +45,7 @@ Technologies and Methodologies used:
 - Agile methodology - for Project planning and tracking
 - Git & GitHub - for Version Control
 - Heroku - for deployment
+</details>
 
 ## UX Design Process
 <details>
@@ -75,6 +76,8 @@ Could Haves
 - As a Site User I can fill in a contact request form so that I can submit a request for contact (Could Have)
 - As a Site Admin I can store contact requests in the database so that I can review them (Could Have)
 - As a Site Admin I can mark contact requests as "read" so that I can see how many I still need to process (Could Have)
+
+In the timeframe allowed I achieved all of my Must Have user stories and therefore achieved the project's MVP. In future improvements and enhancements I would work on achieving the Should Have and Could Have user stories mentioned above.
 </details>
 
 ### Wireframes
@@ -102,29 +105,29 @@ Logout Page
 ![color schemes](/documentation/color_schemes/color-schemes.png)
 </details>
 
-### Imagery
+### Imagery/Media
 <details>
-Images for the placeholder image on the Home Page and Paginated Pages and for the image on the Record Detail page were taken from pexels.com. User-generated images on the Home Page are taken from my own collection.
+Images for the placeholder image on the Home Page, Home Page Page 2 (Paginated Pages) and for the image on the Record Detail page were taken from pexels.com. User-generated images on the Home Page are taken from my own collection.
 
 Placeholder image
 
-![placeholder image](/documentation/imagery/placeholder-image.png)
+![placeholder image](/static/images/person-looking-at-record-in-record-collection.jpg)
 
 Record Detail page image
 
-![record detail page image](/documentation/imagery/image-on-record-detail-page.png)
+![record detail page image](/static/images/closeup-record-on-turntable.jpg)
 
 User generated images
 
-![user generated images](/documentation/imagery/user-generated-images.png)
-
+![user generated images](/static/images/user-generated-images.png)
 </details>
 
 ### Responsiveness
 
+<details>
 Record Reviews is built to be fully responsive across all device sizes. This is to ensure an optimal user experience when accessed on mobile, tablet, or desktop. The design follows a mobile-first approach.
 
-The layout seamlessly adapts to different screen sizes thanks to the use of Flexbox and bootstrap.
+The layout adapts to different screen sizes thanks to the use of Flexbox and bootstrap.
 
 Home page on Mobile
 
@@ -137,6 +140,7 @@ Home page on Tablet
 Home page on Desktop
 
 ![responsiveness - desktop](/static/images/responsiveness/responsiveness-desktop.png)
+</details>
 
 ### Fonts
 
@@ -149,12 +153,11 @@ For the fonts I used sans‑serif fonts
 ## Features
 
 <details>
+
 Key features of the website include:
 
-📋 Project Features by Webpage
 
 🏠 Home Page (/)	
-
 - Responsive Bootstrap layout with grid system
 - Navbar with links: Home, Register, Login/Logout
 - Paginated record listings (title, author, featured image, excerpt)
@@ -238,7 +241,9 @@ User has registered and signed in confirmation message
 
 ![user has registered and signed in confirmation message](/static/images/features/confirmation_messages/user-has-registered-and-signed-in-confirmation.png)
 
+
 🔑 Login Page (/accounts/login/)	
+
 
 - Login form with username and password fields
 - Error messages for invalid credentials
@@ -252,6 +257,7 @@ Login page
 User has signed in confirmation message
 
 ![user has signed in confirmation message](/static/images/features/confirmation_messages/user-has-signed-in-confirmation-message.png)
+
 
 🚪 Logout Page (/accounts/logout/)	
 
@@ -267,6 +273,7 @@ Logout page
 User has signed out confirmation message
 
 ![user has signed out confirmation message](/static/images/features/confirmation_messages/user-has-signed-out-confirmation.png)
+
 
 ⚙️ Admin Dashboard (/admin/)	
 
@@ -308,8 +315,7 @@ Record deleted confirmation message on Admin
 ![record deleted confirmation](/static/images/features/confirmation_messages/record-deleted-confirmation.png)
 
 
-
-✨ Technical Features include:
+✨ Key Technical Features include:
 
 - Bootstrap integration for responsive design
 - Cloudinary for image hosting
@@ -319,17 +325,13 @@ Record deleted confirmation message on Admin
 
 </details>
 
-
 ## Improvements and Future Development
 
 <details>
-In my future enhancements I would add in the full scope as mentioned elsewhere in this README document. This would include the Should Have and Could Have User Stories mentioned in the UX Design Process section of this README document.
-
+In my future enhancements I would add in the full scope as mentioned also in ERD in the Database section and in user stories in th UX Design Process section of this README document. This would include the Should Have and Could Have User Stories mentioned in the UX Design Process section of this README document.
 </details>
 
-
 ## Deployment
-
 <details>
 
 - Deployment is to Heroku
@@ -342,6 +344,7 @@ In my future enhancements I would add in the full scope as mentioned elsewhere i
   - Sensitive data is stored in environment variables.
   - In the production environment DEBUG is set to False.
 </details>
+
 
 ## Testing and Validation
 
@@ -499,12 +502,12 @@ To validate that all features of the RecordReviews project function correctly ac
 - All **non‑functional tests** (HTML validation, CSS validation, responsiveness, accessibility & performance) passed.  
 - Tested thoroughly on **Desktop (Windows)** and **Android mobile devices**.  
 - **Status: Pass** for all features.
-
 </details>
 </details>
 
 ## AI Implementation
 
+<details>
 AI tools were used to assist with planning, code suggestions, debugging, troubleshooting, and accessibility & performance checks. 
 
 Copilot, ChatGPT 4.0, Diagram GPT and Eraser.io proved particularly helpful with planning.
@@ -513,15 +516,17 @@ Copilot was very helpful with code suggestions, debugging & troubleshooting.
 Lighthouse was used for accessiblity & performance checks.
 
 It is worth noting that I chose to use AI outside of my Visual Studio Code. The reasons for this were twofold. Firstly I wanted to maintain full control over my code. Secondly I wanted to gain as much knowledge about full stack software development on this course as I possibly could. I feel I have achieved both.
+</details>
 
 ## Database
 <details>
 The database is a Postgres database hosted by Code Insitute.
 
+### ERD
+
 This is the ERD for the full scope of the project. In future enhancements I would add in full scope.
 
 ![ERD](/documentation/capstone_erd/record-review-ERD.png)
-
 </details>
 
 
@@ -539,6 +544,7 @@ At a high level,the key ones are:
 
 ## Credits
 
+<details>
 ### Code
 
 * Extra code was adapted from Code Institute's walkthrough project - 'Codestar' project.
@@ -558,18 +564,18 @@ At a high level,the key ones are:
 ### Colour scheme 
 
 * The palette was created from the project's css stylesheet with assistance from Figma
-
-
+</details>
+</details>
 
 ## Agile
 <details>
+- A Kanban/Project board on Github was used to track tickets/user stories.
 - This project was managed using agile principles.
 - Development of features took guidance from user stories and MOSCOW prioritisation.
-- A Kanban board on Github was used to track tickets.
 </details>
 
 
-## Tech
+## Tech used
 <details>
 - PostgreSQL, integrated through Django - for Database Management
 - HTML, CSS, Bootstrap, JavaScript - for Frontend Development
@@ -580,6 +586,8 @@ At a high level,the key ones are:
 - Git & GitHub - for Version Control
 - Heroku - for deployment (Sensitive data stored securely in Heroku config)
 - Font Awesome Icons, Google Fonts, Balsamiq
+</details>
+
 
 ## Learning Points
 
@@ -591,10 +599,11 @@ The env.py got mistakenly pushed to github so I created a new database, remigrat
 
 ## Acknowledgements
 
+<details>
 Sincere thank you to the Code Institute staff team - special mentions Dillon McCaffrey, Tom Cowen and Mark Briscoe for their consistent encouragement and support throughout.
 
 Thank you also to my peers in Code Institute and to open‑source contributors.
-
+</details>
 
 
 
