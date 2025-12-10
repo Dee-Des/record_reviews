@@ -352,7 +352,7 @@ In my future enhancements I would add in the full scope as mentioned also in ERD
 ## Testing and Validation
 
 <details>
-Some of the Django generated code showed invalid during validation.
+Some of the Django generated code showed to be invalid during validation.
 
 ### HTML Validation
 
