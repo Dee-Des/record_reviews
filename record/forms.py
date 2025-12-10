@@ -3,6 +3,9 @@ from .models import Record, Review
 
 
 class RecordForm(forms.ModelForm):
+    """
+    Form class for users to add a record
+    """
     class Meta:
         model = Record
         fields = ('title', 'author', 'featured_image', 'artist',
@@ -11,6 +14,9 @@ class RecordForm(forms.ModelForm):
 
 
 class ReviewForm(forms.ModelForm):
+    """
+    Form class for users to add a review on a record
+    """
     class Meta:
         model = Review
         fields = ('body', 'rating')
