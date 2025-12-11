@@ -343,7 +343,7 @@ In my future enhancements I would add in the full scope as mentioned also in ERD
   5. Debug mode is set to False in the settings file before commiting and pushing to Github.
   6. The project is deployed to Heroku using Github integration. Deployment is from the main branch. 
   7. The requirements.txt file handles the dependecies to ensure that all required packages are installed in the production environment.
-  8. The deployed to Heroku project is tested to check that the functionality and design are consistnt with those on the development environment.
+  8. The deployed to Heroku project is tested to check that the functionality and design are consistent with those on the development environment.
   9. Testing and validation is carried out on the deployed to Herku project.
   10. To emphasise again environment variables store sensitive data and DEBUG is set to False in the production environment.
 </details>
@@ -357,7 +357,7 @@ Some of the Django generated code showed to be invalid during validation.
 ### HTML Validation
 
 Home page
-![home page](/documentation/validation/html/home_page/home-page.png)
+![home page](/documentation/validation/html/home_page/.png)
 
 Home page - page 2
 
@@ -549,7 +549,7 @@ At a high level,the key ones are:
 ## Credits
 
 <details>
-### Code
+Code
 
 * Extra code was adapted from Code Institute's walkthrough project - 'Codestar' project.
 
@@ -581,6 +581,7 @@ At a high level,the key ones are:
 
 ## Tech used
 <details>
+
 - PostgreSQL, integrated through Django - for Database Management
 - HTML, CSS, Bootstrap, JavaScript - for Frontend Development
 - Python, Django framework - for Backend Development
