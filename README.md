@@ -357,7 +357,7 @@ Some of the Django generated code showed to be invalid during validation.
 ### HTML Validation
 
 Home page
-![home page](/documentation/validation/html/home_page/.png)
+![home page](/documentation/validation/html/home_page/home-page.png)
 
 Home page - page 2
 
