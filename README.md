@@ -328,7 +328,7 @@ Record deleted confirmation message on Admin
 ## Improvements and Future Development
 
 <details>
-In my future enhancements I would add in the full scope as mentioned also in ERD in the Database section and in user stories in th UX Design Process section of this README document. This would include the Should Have and Could Have User Stories mentioned in the UX Design Process section of this README document.
+In my future enhancements I would add in the full scope as mentioned also in ERD in the Database section and in user stories in the UX Design Process section of this README document. This would include the Should Have and Could Have User Stories mentioned in the UX Design Process section of this README document.
 </details>
 
 ## Deployment
